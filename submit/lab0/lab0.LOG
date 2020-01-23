@@ -1,0 +1,281 @@
+Script started on 2020-01-23 13:23:22-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+mmuffol1@g7-22:~/tmp/lab0$ ls ~/.ssh; if both ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub
+> ^C
+mmuffol1@g7-22:~/tmp/lab0$ ls ~/.ssh; [K
+ls: cannot access '/home/mmuffol1/.ssh': No such file or directory
+mmuffol1@g7-22:~/tmp/lab0$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/mmuffol1/.ssh/id_rsa): 
+Created directory '/home/mmuffol1/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/mmuffol1/.ssh/id_rsa.
+Your public key has been saved in /home/mmuffol1/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:DlpQidzSrjZCIgHAZWSTh6aogI8TGZNj7dke87cfQRA mmuffol1@g7-22
+The key's randomart image is:
++---[RSA 2048]----+
+|*.+Bo+.. E.      |
+|*oo==o+   .      |
+|+*+ =o     .     |
+|O..o =.   .      |
+|+*  ..* S  .     |
+|+ o ++ + .  .    |
+| . o..  o ..     |
+|         .  .    |
+|          ..     |
++----[SHA256]-----+
+mmuffol1@g7-22:~/tmp/lab0$ ssh-copy-id -i user@remote
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/mmuffol1/.ssh/id_rsa.pub"
+The authenticity of host 'remote (128.226.114.200)' can't be established.
+ECDSA key fingerprint is SHA256:UEIh1TASIC96TC1hhxVbkVS0DrddNKHk7Q2nzgDCt+Y.
+Are you sure you want to continue connecting (yes/no)? yes
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+user@remote's password: 
+Permission denied, please try again.
+user@remote's password: 
+Permission denied, please try again.
+user@remote's password: 
+Connection closed by 128.226.114.206 port 22
+mmuffol1@g7-22:~/tmp/lab0$ ssh-copy-id -i user@remote[1P@remote[1P@remote[1P@remote[1P@remoteM@remotea@remoter@remotec@remote[1P@remote[1P@remote[1P@remote[1P@remotem@remotem@remoteu@remotef@remotef@remoteo@remotel@remote1@remote
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/mmuffol1/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+mmuffol1@remote's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh 'mmuffol1@remote'"
+and check to make sure that only the key(s) you wanted were added.
+
+mmuffol1@g7-22:~/tmp/lab0$ ssh mmuffol1![K@remote
+Linux remote06 4.19.0-5-amd64 #1 SMP Debian 4.19.37-5 (2019-06-19) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+mmuffol1@remote06:~$ nana[Ko
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J(B[0;7m  GNU nano 3.2                       New Buffer                                 [1;79H(B[m[22;16H(B[0;7m[ Welcome to nano.  For basic help, type Ctrl+G. ](B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3d[39;49m(B[m[?12l[?25h[?25l[22d[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>mmuffol1@remote06:~$ nana[Ko ~/.profile
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 3.2                /home/mmuffol1/.profile                           [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3d[39;49m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified[22d(B[m[K[1;79H[3d. ~umrigar/cs240/bin/student.profile[?12l[?25h[?25l[4d[?12l[?25h[?25l[22d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                   [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;63H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: /home/mmuffol1/.profile                  (B[m[22;44H[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 2 lines ](B[m[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>mmuffol1@remote06:~$ nano ~/.profile
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ](B[m[22;39H(B[0;7m 2 lines ](B[m[H(B[0;7m  GNU nano 3.2                /home/mmuffol1/.profile                           [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3d[39;49m(B[m. ~umrigar/cs240/bin/student.profile[?12l[?25h[?25l[22d[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>mmuffol1@remote06:~$ nano ~/.bashrc
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 3.2                 /home/mmuffol1/.bashrc                           [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3d[39;49m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified[22d(B[m[K[1;79H[3d. ~umrigar/cs240/bin/student.rc[?12l[?25h[?25l[22d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                   [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;63H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: /home/mmuffol1/.bashrc                   (B[m[22;43H[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m        (B[m[22;33H(B[0;7m[ Wrote 1 line ](B[m[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>mmuffol1@remote06:~$ ssh://user@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.[1Pgit[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.g[1Pit[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.gi[1Pt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cf@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cf@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+-bash: ssh://mmuffol1@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git: No such file or directory
+mmuffol1@remote06:~$ mkdir -p ~/projects
+mmuffol1@remote06:~$ cd ~/projects
+mmuffol1@remote06:~/projects$ ssh://mmuffol1@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git
+-bash: ssh://mmuffol1@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git: No such file or directory
+mmuffol1@remote06:~/projects$ 
+mmuffol1@remote06:~/projects$ cd ~
+mmuffol1@remote06:~$ ln -s projects/cd[Ks240
+mmuffol1@remote06:~$ ln -s projects/cs240 .
+ln: failed to create symbolic link './cs240': File exists
+mmuffol1@remote06:~$ ls
+cs240	 Documents  Music     projects	Templates  Videos
+Desktop  Downloads  Pictures  Public	tmp
+mmuffol1@remote06:~$ cd pr[Krojects/
+mmuffol1@remote06:~/projects$ ls
+mmuffol1@remote06:~/projects$ cd cds[K[Ks[K[K[K[K[Kls
+mmuffol1@remote06:~/projects$ cd ..
+mmuffol1@remote06:~$ ls
+cs240	 Documents  Music     projects	Templates  Videos
+Desktop  Downloads  Pictures  Public	tmp
+mmuffol1@remote06:~$ rm projects/sc[K[Kcs^[s[Cs[C[K[K[K[K[K[K/cs240
+rm: cannot remove 'projects/cs240': No such file or directory
+mmuffol1@remote06:~$ ls
+cs240	 Documents  Music     projects	Templates  Videos
+Desktop  Downloads  Pictures  Public	tmp
+mmuffol1@remote06:~$ lsrm projects/cs240ls[Kcd ..[3Plscd ..[3Plsrm projects/cs240[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kln -s peo[K[Ko[Krojects/cs240
+ln: failed to create symbolic link './cs240': File exists
+mmuffol1@remote06:~$ ln -s projects/cs240[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K [K[Kmmuffol1@remote06:~$ cd projects
+mmuffol1@remote06:~/projects$ ls
+mmuffol1@remote06:~/projects$ cd ~/projects
+mmuffol1@remote06:~/projects$ git clone ssh://user@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.edu/~umrigar/git-repos/c[1Ps240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.edu/~umrigar/git-repos/cs[1P240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.edu/~umrigar/git-repos/cs2[1P40.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.edu/~umrigar/git-repos/cs24[1P0.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CM@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.edu/~umrigar/git-repos/cs2[1P40.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.edu/~umrigar/git-repos/cs24[1P0.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cf@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cf@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1@remote.cs.binghamton.edu/~umrigar/git-repos/cs240.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+Cloning into 'cs240'...
+The authenticity of host 'remote.cs.binghamton.edu (128.226.114.206)' can't be established.
+ECDSA key fingerprint is SHA256:UEIh1TASIC96TC1hhxVbkVS0DrddNKHk7Q2nzgDCt+Y.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+Warning: Permanently added 'remote.cs.binghamton.edu' (ECDSA) to the list of known hosts.
+/home/mmuffol1/.bashrc: line 1: /home/umrigar/cs240/bin/student.rc: Permission denied
+remote: Enumerating objects: 210, done.[K
+remote: Counting objects:   0% (1/210)   [Kremote: Counting objects:   1% (3/210)   [Kremote: Counting objects:   2% (5/210)   [Kremote: Counting objects:   3% (7/210)   [Kremote: Counting objects:   4% (9/210)   [Kremote: Counting objects:   5% (11/210)   [Kremote: Counting objects:   6% (13/210)   [Kremote: Counting objects:   7% (15/210)   [Kremote: Counting objects:   8% (17/210)   [Kremote: Counting objects:   9% (19/210)   [Kremote: Counting objects:  10% (21/210)   [Kremote: Counting objects:  11% (24/210)   [Kremote: Counting objects:  12% (26/210)   [Kremote: Counting objects:  13% (28/210)   [Kremote: Counting objects:  14% (30/210)   [Kremote: Counting objects:  15% (32/210)   [Kremote: Counting objects:  16% (34/210)   [Kremote: Counting objects:  17% (36/210)   [Kremote: Counting objects:  18% (38/210)   [Kremote: Counting objects:  19% (40/210)   [Kremote: Counting objects:  20% (42/210)   [Kremote: Counting objects:  21% (45/210)   [Kremote: Counting objects:  22% (47/210)   [Kremote: Counting objects:  23% (49/210)   [Kremote: Counting objects:  24% (51/210)   [Kremote: Counting objects:  25% (53/210)   [Kremote: Counting objects:  26% (55/210)   [Kremote: Counting objects:  27% (57/210)   [Kremote: Counting objects:  28% (59/210)   [Kremote: Counting objects:  29% (61/210)   [Kremote: Counting objects:  30% (63/210)   [Kremote: Counting objects:  31% (66/210)   [Kremote: Counting objects:  32% (68/210)   [Kremote: Counting objects:  33% (70/210)   [Kremote: Counting objects:  34% (72/210)   [Kremote: Counting objects:  35% (74/210)   [Kremote: Counting objects:  36% (76/210)   [Kremote: Counting objects:  37% (78/210)   [Kremote: Counting objects:  38% (80/210)   [Kremote: Counting objects:  39% (82/210)   [Kremote: Counting objects:  40% (84/210)   [Kremote: Counting objects:  41% (87/210)   [Kremote: Counting objects:  42% (89/210)   [Kremote: Counting objects:  43% (91/210)   [Kremote: Counting objects:  44% (93/210)   [Kremote: Counting objects:  45% (95/210)   [Kremote: Counting objects:  46% (97/210)   [Kremote: Counting objects:  47% (99/210)   [Kremote: Counting objects:  48% (101/210)   [Kremote: Counting objects:  49% (103/210)   [Kremote: Counting objects:  50% (105/210)   [Kremote: Counting objects:  51% (108/210)   [Kremote: Counting objects:  52% (110/210)   [Kremote: Counting objects:  53% (112/210)   [Kremote: Counting objects:  54% (114/210)   [Kremote: Counting objects:  55% (116/210)   [Kremote: Counting objects:  56% (118/210)   [Kremote: Counting objects:  57% (120/210)   [Kremote: Counting objects:  58% (122/210)   [Kremote: Counting objects:  59% (124/210)   [Kremote: Counting objects:  60% (126/210)   [Kremote: Counting objects:  61% (129/210)   [Kremote: Counting objects:  62% (131/210)   [Kremote: Counting objects:  63% (133/210)   [Kremote: Counting objects:  64% (135/210)   [Kremote: Counting objects:  65% (137/210)   [Kremote: Counting objects:  66% (139/210)   [Kremote: Counting objects:  67% (141/210)   [Kremote: Counting objects:  68% (143/210)   [Kremote: Counting objects:  69% (145/210)   [Kremote: Counting objects:  70% (147/210)   [Kremote: Counting objects:  71% (150/210)   [Kremote: Counting objects:  72% (152/210)   [Kremote: Counting objects:  73% (154/210)   [Kremote: Counting objects:  74% (156/210)   [Kremote: Counting objects:  75% (158/210)   [Kremote: Counting objects:  76% (160/210)   [Kremote: Counting objects:  77% (162/210)   [Kremote: Counting objects:  78% (164/210)   [Kremote: Counting objects:  79% (166/210)   [Kremote: Counting objects:  80% (168/210)   [Kremote: Counting objects:  81% (171/210)   [Kremote: Counting objects:  82% (173/210)   [Kremote: Counting objects:  83% (175/210)   [Kremote: Counting objects:  84% (177/210)   [Kremote: Counting objects:  85% (179/210)   [Kremote: Counting objects:  86% (181/210)   [Kremote: Counting objects:  87% (183/210)   [Kremote: Counting objects:  88% (185/210)   [Kremote: Counting objects:  89% (187/210)   [Kremote: Counting objects:  90% (189/210)   [Kremote: Counting objects:  91% (192/210)   [Kremote: Counting objects:  92% (194/210)   [Kremote: Counting objects:  93% (196/210)   [Kremote: Counting objects:  94% (198/210)   [Kremote: Counting objects:  95% (200/210)   [Kremote: Counting objects:  96% (202/210)   [Kremote: Counting objects:  97% (204/210)   [Kremote: Counting objects:  98% (206/210)   [Kremote: Counting objects:  99% (208/210)   [Kremote: Counting objects: 100% (210/210)   [Kremote: Counting objects: 100% (210/210), done.[K
+remote: Compressing objects:   0% (1/201)   [Kremote: Compressing objects:   1% (3/201)   [Kremote: Compressing objects:   2% (5/201)   [Kremote: Compressing objects:   3% (7/201)   [Kremote: Compressing objects:   4% (9/201)   [Kremote: Compressing objects:   5% (11/201)   [Kremote: Compressing objects:   6% (13/201)   [Kremote: Compressing objects:   7% (15/201)   [Kremote: Compressing objects:   8% (17/201)   [Kremote: Compressing objects:   9% (19/201)   [Kremote: Compressing objects:  10% (21/201)   [Kremote: Compressing objects:  11% (23/201)   [Kremote: Compressing objects:  12% (25/201)   [Kremote: Compressing objects:  13% (27/201)   [Kremote: Compressing objects:  14% (29/201)   [Kremote: Compressing objects:  15% (31/201)   [Kremote: Compressing objects:  16% (33/201)   [Kremote: Compressing objects:  17% (35/201)   [Kremote: Compressing objects:  18% (37/201)   [Kremote: Compressing objects:  19% (39/201)   [Kremote: Compressing objects:  20% (41/201)   [Kremote: Compressing objects:  21% (43/201)   [Kremote: Compressing objects:  22% (45/201)   [Kremote: Compressing objects:  23% (47/201)   [Kremote: Compressing objects:  24% (49/201)   [Kremote: Compressing objects:  25% (51/201)   [Kremote: Compressing objects:  26% (53/201)   [Kremote: Compressing objects:  27% (55/201)   [Kremote: Compressing objects:  28% (57/201)   [Kremote: Compressing objects:  29% (59/201)   [Kremote: Compressing objects:  30% (61/201)   [Kremote: Compressing objects:  31% (63/201)   [Kremote: Compressing objects:  32% (65/201)   [Kremote: Compressing objects:  33% (67/201)   [Kremote: Compressing objects:  34% (69/201)   [Kremote: Compressing objects:  35% (71/201)   [Kremote: Compressing objects:  36% (73/201)   [Kremote: Compressing objects:  37% (75/201)   [Kremote: Compressing objects:  38% (77/201)   [Kremote: Compressing objects:  39% (79/201)   [Kremote: Compressing objects:  40% (81/201)   [Kremote: Compressing objects:  41% (83/201)   [Kremote: Compressing objects:  42% (85/201)   [Kremote: Compressing objects:  43% (87/201)   [Kremote: Compressing objects:  44% (89/201)   [Kremote: Compressing objects:  45% (91/201)   [Kremote: Compressing objects:  46% (93/201)   [Kremote: Compressing objects:  47% (95/201)   [Kremote: Compressing objects:  48% (97/201)   [Kremote: Compressing objects:  49% (99/201)   [Kremote: Compressing objects:  50% (101/201)   [Kremote: Compressing objects:  51% (103/201)   [Kremote: Compressing objects:  52% (105/201)   [Kremote: Compressing objects:  53% (107/201)   [Kremote: Compressing objects:  54% (109/201)   [Kremote: Compressing objects:  55% (111/201)   [Kremote: Compressing objects:  56% (113/201)   [Kremote: Compressing objects:  57% (115/201)   [Kremote: Compressing objects:  58% (117/201)   [Kremote: Compressing objects:  59% (119/201)   [Kremote: Compressing objects:  60% (121/201)   [Kremote: Compressing objects:  61% (123/201)   [Kremote: Compressing objects:  62% (125/201)   [Kremote: Compressing objects:  63% (127/201)   [Kremote: Compressing objects:  64% (129/201)   [Kremote: Compressing objects:  65% (131/201)   [Kremote: Compressing objects:  66% (133/201)   [Kremote: Compressing objects:  67% (135/201)   [Kremote: Compressing objects:  68% (137/201)   [Kremote: Compressing objects:  69% (139/201)   [Kremote: Compressing objects:  70% (141/201)   [Kremote: Compressing objects:  71% (143/201)   [Kremote: Compressing objects:  72% (145/201)   [Kremote: Compressing objects:  73% (147/201)   [Kremote: Compressing objects:  74% (149/201)   [Kremote: Compressing objects:  75% (151/201)   [Kremote: Compressing objects:  76% (153/201)   [Kremote: Compressing objects:  77% (155/201)   [Kremote: Compressing objects:  78% (157/201)   [Kremote: Compressing objects:  79% (159/201)   [Kremote: Compressing objects:  80% (161/201)   [Kremote: Compressing objects:  81% (163/201)   [Kremote: Compressing objects:  82% (165/201)   [Kremote: Compressing objects:  83% (167/201)   [Kremote: Compressing objects:  84% (169/201)   [Kremote: Compressing objects:  85% (171/201)   [Kremote: Compressing objects:  86% (173/201)   [Kremote: Compressing objects:  87% (175/201)   [Kremote: Compressing objects:  88% (177/201)   [Kremote: Compressing objects:  89% (179/201)   [Kremote: Compressing objects:  90% (181/201)   [Kremote: Compressing objects:  91% (183/201)   [Kremote: Compressing objects:  92% (185/201)   [Kremote: Compressing objects:  93% (187/201)   [Kremote: Compressing objects:  94% (189/201)   [Kremote: Compressing objects:  95% (191/201)   [Kremote: Compressing objects:  96% (193/201)   [Kremote: Compressing objects:  97% (195/201)   [Kremote: Compressing objects:  98% (197/201)   [Kremote: Compressing objects:  99% (199/201)   [Kremote: Compressing objects: 100% (201/201)   [Kremote: Compressing objects: 100% (201/201), done.[K
+Receiving objects:   0% (1/210)   Receiving objects:   1% (3/210)   Receiving objects:   2% (5/210)   Receiving objects:   3% (7/210)   Receiving objects:   4% (9/210)   Receiving objects:   5% (11/210)   Receiving objects:   6% (13/210)   Receiving objects:   7% (15/210)   Receiving objects:   8% (17/210)   Receiving objects:   9% (19/210)   Receiving objects:  10% (21/210)   Receiving objects:  11% (24/210)   Receiving objects:  12% (26/210)   Receiving objects:  13% (28/210)   Receiving objects:  14% (30/210)   Receiving objects:  15% (32/210)   Receiving objects:  16% (34/210)   Receiving objects:  17% (36/210)   Receiving objects:  18% (38/210)   Receiving objects:  19% (40/210)   Receiving objects:  20% (42/210)   Receiving objects:  21% (45/210)   Receiving objects:  22% (47/210)   Receiving objects:  23% (49/210)   Receiving objects:  24% (51/210)   Receiving objects:  25% (53/210)   Receiving objects:  26% (55/210)   Receiving objects:  27% (57/210)   Receiving objects:  28% (59/210)   Receiving objects:  29% (61/210)   Receiving objects:  30% (63/210)   Receiving objects:  31% (66/210)   Receiving objects:  32% (68/210)   Receiving objects:  33% (70/210)   Receiving objects:  34% (72/210)   Receiving objects:  35% (74/210)   Receiving objects:  36% (76/210)   Receiving objects:  37% (78/210)   Receiving objects:  38% (80/210)   Receiving objects:  39% (82/210)   Receiving objects:  40% (84/210)   Receiving objects:  41% (87/210)   Receiving objects:  42% (89/210)   Receiving objects:  43% (91/210)   Receiving objects:  44% (93/210)   Receiving objects:  45% (95/210)   Receiving objects:  46% (97/210)   Receiving objects:  47% (99/210)   Receiving objects:  48% (101/210)   Receiving objects:  49% (103/210)   Receiving objects:  50% (105/210)   Receiving objects:  51% (108/210)   Receiving objects:  52% (110/210)   Receiving objects:  53% (112/210)   Receiving objects:  54% (114/210)   Receiving objects:  55% (116/210)   Receiving objects:  56% (118/210)   Receiving objects:  57% (120/210)   Receiving objects:  58% (122/210)   Receiving objects:  59% (124/210)   Receiving objects:  60% (126/210)   Receiving objects:  61% (129/210)   Receiving objects:  62% (131/210)   Receiving objects:  63% (133/210)   Receiving objects:  64% (135/210)   Receiving objects:  65% (137/210)   Receiving objects:  66% (139/210)   Receiving objects:  67% (141/210)   Receiving objects:  68% (143/210)   Receiving objects:  69% (145/210)   Receiving objects:  70% (147/210)   Receiving objects:  71% (150/210)   Receiving objects:  72% (152/210)   Receiving objects:  73% (154/210)   Receiving objects:  74% (156/210)   Receiving objects:  75% (158/210)   Receiving objects:  76% (160/210)   Receiving objects:  77% (162/210)   Receiving objects:  78% (164/210)   Receiving objects:  79% (166/210)   Receiving objects:  80% (168/210)   Receiving objects:  81% (171/210)   Receiving objects:  82% (173/210)   Receiving objects:  83% (175/210)   Receiving objects:  84% (177/210)   Receiving objects:  85% (179/210)   Receiving objects:  86% (181/210)   Receiving objects:  87% (183/210)   Receiving objects:  88% (185/210)   Receiving objects:  89% (187/210)   Receiving objects:  90% (189/210)   Receiving objects:  91% (192/210)   Receiving objects:  92% (194/210)   Receiving objects:  93% (196/210)   Receiving objects:  94% (198/210)   remote: Total 210 (delta 89), reused 0 (delta 0)[K
+Receiving objects:  95% (200/210)   Receiving objects:  96% (202/210)   Receiving objects:  97% (204/210)   Receiving objects:  98% (206/210)   Receiving objects:  99% (208/210)   Receiving objects: 100% (210/210)   Receiving objects: 100% (210/210), 3.06 MiB | 10.95 MiB/s, done.
+Resolving deltas:   0% (0/89)   Resolving deltas:   3% (3/89)   Resolving deltas:   6% (6/89)   Resolving deltas:  11% (10/89)   Resolving deltas:  12% (11/89)   Resolving deltas:  14% (13/89)   Resolving deltas:  19% (17/89)   Resolving deltas:  31% (28/89)   Resolving deltas:  37% (33/89)   Resolving deltas:  39% (35/89)   Resolving deltas:  41% (37/89)   Resolving deltas:  44% (40/89)   Resolving deltas:  48% (43/89)   Resolving deltas:  55% (49/89)   Resolving deltas:  58% (52/89)   Resolving deltas:  59% (53/89)   Resolving deltas:  60% (54/89)   Resolving deltas:  62% (56/89)   Resolving deltas:  65% (58/89)   Resolving deltas:  67% (60/89)   Resolving deltas:  69% (62/89)   Resolving deltas:  71% (64/89)   Resolving deltas:  79% (71/89)   Resolving deltas:  82% (73/89)   Resolving deltas:  83% (74/89)   Resolving deltas:  84% (75/89)   Resolving deltas:  85% (76/89)   Resolving deltas:  86% (77/89)   Resolving deltas:  88% (79/89)   Resolving deltas:  98% (88/89)   Resolving deltas: 100% (89/89)   Resolving deltas: 100% (89/89), done.
+mmuffol1@remote06:~/projects$ cd ~
+mmuffol1@remote06:~$ ln -s projects/cs240 .
+ln: failed to create symbolic link './cs240': File exists
+mmuffol1@remote06:~$ ls
+cs240	 Documents  Music     projects	Templates  Videos
+Desktop  Downloads  Pictures  Public	tmp
+mmuffol1@remote06:~$ cd cs240
+mmuffol1@remote06:~/cs240$ ls
+announce.html  assets  exams-quizzes  hws	  index.umt  misc      README.md  umt.make
+announce.umt   docs    exercises      index.html  labs	     projects  slides
+mmuffol1@remote06:~/cs240$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+mmuffol1@remote06:~/cs240$ git pull
+/home/mmuffol1/.bashrc: line 1: /home/umrigar/cs240/bin/student.rc: Permission denied
+Already up to date.
+mmuffol1@remote06:~/cs240$ $ EDITOR=YOUR_FAVORITE_EDITOR crontab -e[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@N[1@a[1@n[1@o[C[1P[1@n[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K$ git log -5
+-bash: $: command not found
+mmuffol1@remote06:~/cs240$ $ git log -5[1P
+[?1h=[33mcommit 8d6dd352014a55daef6e897d54d5bc33650ca50f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Thu Jan 23 13:40:58 2020 -0500[m
+[m
+    added abet requirements to syllabus[m
+[m
+[33mcommit 24681db1cd13af495d8c1511f77123e5d91ed1dd[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Thu Jan 23 08:17:24 2020 -0500[m
+[m
+    added grading guidelines[m
+[m
+[33mcommit b28da302c11169a1a76ebab0b25099bb8241c34b[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Wed Jan 22 22:01:19 2020 -0500[m
+[m
+    update syllabus and lab0 with TA info[m
+[m
+[33mcommit 8d242d7ee425f9c85f96bb6923179e7390091716[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Wed Jan 22 12:34:04 2020 -0500[m
+[m
+:[K[K:[K[K    tweaks[m
+[m
+[33mcommit e1347fe43738124771013ec1a789ec5e3d9ae284[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Wed Jan 22 11:34:26 2020 -0500[m
+[m
+    set up for first class[m
+[7m(END)[27m[K[K[K[7m(END)[27m[K[K/[K[K[7mNo previous regular expression  (press RETURN)[27m[23;1H[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[7m(END)[27m[K[K [KESCESC[K^J^J[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K [KESCESC[Kjj[K[7m(END)[27m[K[K[HM[33mcommit 24681db1cd13af495d8c1511f77123e5d91ed1dd[m[m
+[23;1H[K:[K[K:[K[K    set up for first class[m
+[7m(END)[27m[K[K[HM[33mcommit 24681db1cd13af495d8c1511f77123e5d91ed1dd[m[m
+[23;1H[K:[K[K    set up for first class[m
+[7m(END)[27m[K[K[HM[33mcommit 24681db1cd13af495d8c1511f77123e5d91ed1dd[m[m
+[23;1H[K:[K[K    set up for first class[m
+[7m(END)[27m[K[K[K[7m(END)[27m[K[K[HM[33mcommit 24681db1cd13af495d8c1511f77123e5d91ed1dd[m[m
+[23;1H[K:[K[K    set up for first class[m
+[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[HM[33mcommit 24681db1cd13af495d8c1511f77123e5d91ed1dd[m[m
+[23;1H[K:[K[K:[K[K    set up for first class[m
+[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[HM[33mcommit 24681db1cd13af495d8c1511f77123e5d91ed1dd[m[m
+[23;1H[K:[K[K:[K[K [KESCESC[KESCESC[K [KESCESC[K^?^?[K:[K[K:[K[K [KESCESC[KESCESC[K [KESCESC[K^?^?[K:[K[K [KESCESC[KESCESC[K    set up for first class[m
+[7m(END)[27m[K[K [KESCESC[KESCESC[K [KESCESC[K^?^?[K[7m(END)[27m[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K...skipping...
+[m
+                   [1mSUMMARY[0m [1mOF[0m [1mLESS[0m [1mCOMMANDS[0m[m
+[m
+      Commands marked with * may be preceded by a number, [4mN[24m.[m
+      Notes in parentheses indicate the behavior if [4mN[24m is given.[m
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.[m
+[m
+  h  H                 Display this help.[m
+  q  :q  Q  :Q  ZZ     Exit.[m
+ ---------------------------------------------------------------------------[m
+[m
+                           [1mMOVING[0m[m
+[m
+  e  ^E  j  ^N  CR  *  Forward  one line   (or [4mN[24m lines).[m
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or [4mN[24m lines).[m
+  f  ^F  ^V  SPACE  *  Forward  one window (or [4mN[24m lines).[m
+  b  ^B  ESC-v      *  Backward one window (or [4mN[24m lines).[m
+  z                 *  Forward  one window (and set window to [4mN[24m).[m
+  w                 *  Backward one window (and set window to [4mN[24m).[m
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.[m
+  d  ^D             *  Forward  one half-window (and set half-window to [4mN[24m).[m
+  u  ^U             *  Backward one half-window (and set half-window to [4mN[24m).[m
+[7mHELP -- Press RETURN for more, or q when done[27m[K[K  ESC-)  RightArrow *  Right one half screen width (or [4mN[24m positions).[m
+  ESC-(  LeftArrow  *  Left  one half screen width (or [4mN[24m positions).[m
+  ESC-}  ^RightArrow   Right to last column displayed.[m
+  ESC-{  ^LeftArrow    Left  to first column.[m
+  F                    Forward forever; like "tail -f".[m
+  ESC-F                Like F but stop when search pattern is found.[m
+  r  ^R  ^L            Repaint screen.[m
+  R                    Repaint screen, discarding buffered input.[m
+        ---------------------------------------------------[m
+        Default "window" is the screen height.[m
+        Default "half-window" is half of the screen height.[m
+ ---------------------------------------------------------------------------[m
+[m
+                          [1mSEARCHING[0m[m
+[m
+  /[4mpattern[24m          *  Search forward for ([4mN[24m-th) matching line.[m
+  ?[4mpattern[24m          *  Search backward for ([4mN[24m-th) matching line.[m
+  n                 *  Repeat previous search (for [4mN[24m-th occurrence).[m
+  N                 *  Repeat previous search in reverse direction.[m
+  ESC-n             *  Repeat previous search, spanning files.[m
+  ESC-N             *  Repeat previous search, reverse dir. & spanning files.[m
+  ESC-u                Undo (toggle) search highlighting.[m
+[7mHELP -- Press RETURN for more, or q when done[27m[K[K[7mHELP -- Press RETURN for more, or q when done[27m[K[K[?1l>
+[1]+  Stopped                 git log -5
+mmuffol1@remote06:~/cs240$ git clone https://github.com/muffmarc/i240a.git
+Cloning into 'i240a'...
+remote: Enumerating objects: 4, done.[K
+remote: Counting objects:  25% (1/4)[Kremote: Counting objects:  50% (2/4)[Kremote: Counting objects:  75% (3/4)[Kremote: Counting objects: 100% (4/4)[Kremote: Counting objects: 100% (4/4), done.[K
+remote: Compressing objects:  33% (1/3)[Kremote: Compressing objects:  66% (2/3)[Kremote: Compressing objects: 100% (3/3)[Kremote: Compressing objects: 100% (3/3), done.[K
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  25% (1/4)   Unpacking objects:  50% (2/4)   Unpacking objects:  75% (3/4)   Unpacking objects: 100% (4/4)   Unpacking objects: 100% (4/4), done.
+mmuffol1@remote06:~/cs240$ cd~
+-bash: cd~: command not found
+mmuffol1@remote06:~/cs240$  cd ~/projects
+mmuffol1@remote06:~/projects$ git clone https://github.com/muffmarc/i240a.git
+Cloning into 'i240a'...
+remote: Enumerating objects: 4, done.[K
+remote: Counting objects:  25% (1/4)[Kremote: Counting objects:  50% (2/4)[Kremote: Counting objects:  75% (3/4)[Kremote: Counting objects: 100% (4/4)[Kremote: Counting objects: 100% (4/4), done.[K
+remote: Compressing objects:  33% (1/3)[Kremote: Compressing objects:  66% (2/3)[Kremote: Compressing objects: 100% (3/3)[Kremote: Compressing objects: 100% (3/3), done.[K
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  25% (1/4)   Unpacking objects:  50% (2/4)   Unpacking objects:  75% (3/4)   Unpacking objects: 100% (4/4)   Unpacking objects: 100% (4/4), done.
+mmuffol1@remote06:~/projects$  [Kcd ~
+mmuffol1@remote06:~$ ln -s ~/projects/i240? .[1P .a .
+mmuffol1@remote06:~$ cd proj[K[K[K[K~/projects
+mmuffol1@remote06:~/projects$ cd ~/[K[Ki[K/i[K[Ki240a
+mmuffol1@remote06:~/projects/i240a$ ls
+README.md
+mmuffol1@remote06:~/projects/i240a$ git [K[K[K[Kvim .git
+.git/       .gitignore  
+mmuffol1@remote06:~/projects/i240a$ vim .git
+.git/       .gitignore  
+mmuffol1@remote06:~/projects/i240a$ vim .git[K[K[K[K[K[K[K[Kls -dl ~/cs240 ~/i240X[Ka
+ls: cannot access '/home/mmuffol1/cs240': No such file or directory
+lrwxrwxrwx 1 mmuffol1 mmuffol1 29 Jan 23 14:17 /home/mmuffol1/i240a -> /home/mmuffol1/projects/i240a
+mmuffol1@remote06:~/projects/i240a$ cd ~
+mmuffol1@remote06:~$ ls -dl ~/cs240 ~/i240X[Ka
+ls: cannot access '/home/mmuffol1/cs240': No such file or directory
+lrwxrwxrwx 1 mmuffol1 mmuffol1 29 Jan 23 14:17 /home/mmuffol1/i240a -> /home/mmuffol1/projects/i240a
+mmuffol1@remote06:~$ ls -l ~/.ssh ~/cs240 ~/i240X [K[Ka
+ls: cannot access '/home/mmuffol1/cs240': No such file or directory
+lrwxrwxrwx 1 mmuffol1 mmuffol1 29 Jan 23 14:17 /home/mmuffol1/i240a -> /home/mmuffol1/projects/i240a
+
+/home/mmuffol1/.ssh:
+total 16
+-rw------- 1 mmuffol1 mmuffol1  396 Jan 23 13:35 authorized_keys
+-rw------- 1 mmuffol1 mmuffol1 1823 Jan 23 13:27 id_rsa
+-rw-r--r-- 1 mmuffol1 mmuffol1  396 Jan 23 13:27 id_rsa.pub
+-rw-r--r-- 1 mmuffol1 mmuffol1 1110 Jan 23 13:53 known_hosts
+mmuffol1@remote06:~$ ls - ~/.ssh
+ls: cannot access '-': No such file or directory
+/home/mmuffol1/.ssh:
+authorized_keys  id_rsa  id_rsa.pub  known_hosts
+mmuffol1@remote06:~$ ls - ~/.ssh[K[K[K[Kcs240
+ls: cannot access '-': No such file or directory
+ls: cannot access '/home/mmuffol1/cs240': No such file or directory
+mmuffol1@remote06:~$ ls - ~/cs240[K[K[K[K[Ki240a
+ls: cannot access '-': No such file or directory
+/home/mmuffol1/i240a:
+README.md
+mmuffol1@remote06:~$ cd
+mmuffol1@remote06:~$ ls
+Desktop    Downloads  Music	projects  Templates  Videos
+Documents  i240a      Pictures	Public	  tmp
+mmuffol1@remote06:~$ cd
+mmuffol1@remote06:~$ ln -s pro
