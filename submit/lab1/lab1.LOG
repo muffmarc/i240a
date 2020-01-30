@@ -1,0 +1,556 @@
+bash: /home/umrigar/cs240/bin/student.rc: Permission denied
+mmuffol1@g7-19:/import/linux/home1/mmuffol1$ cd cs240
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/cs240$ git pull
+Warning: Permanently added the ECDSA host key for IP address '128.226.114.202' to the list of known hosts.
+/home/mmuffol1/.bashrc: line 1: /home/umrigar/cs240/bin/student.rc: Permission denied
+remote: Enumerating objects: 179, done.
+remote: Counting objects: 100% (179/179), done.
+remote: Compressing objects: 100% (138/138), done.
+remote: Total 145 (delta 74), reused 0 (delta 0)
+Receiving objects: 100% (145/145), 506.36 KiB | 7.56 MiB/s, done.
+Resolving deltas: 100% (74/74), completed with 27 local objects.
+From ssh://remote.cs.binghamton.edu/~umrigar/git-repos/cs240
+   8d6dd35..0b7b862  master     -> origin/master
+Updating 8d6dd35..0b7b862
+Fast-forward
+ exercises/templates/index.html                            |   2 +-
+ index.html                                                |  16 +-
+ index.umt                                                 |   5 +
+ labs/index.html                                           |   9 +-
+ labs/index.umt                                            |  17 +-
+ labs/lab-tips/lab-tips.html                               |  70 ----
+ labs/lab-tips/lab-tips.pdf                                | Bin 35175 -> 0 bytes
+ labs/lab-tips/lab-tips.umt                                |  64 ---
+ labs/lab0/lab0.html                                       |  20 +-
+ labs/lab0/lab0.pdf                                        | Bin 120447 -> 120490 bytes
+ labs/lab0/lab0.umt                                        |  10 +-
+ labs/lab0/lab0/hl-fine_blue.css                           |   2 +-
+ labs/lab0/lab0/hl-fine_blue.sty                           |   2 +-
+ labs/lab1/.gitignore                                      |   2 +
+ labs/lab1/exercises/.gitignore                            |   1 +
+ labs/lab1/exercises/0-hello/.gitignore                    |   1 +
+ labs/lab1/exercises/0-hello/hello.cc                      |   7 +
+ labs/lab1/exercises/1-monolithic/fns-compare.cc           |  25 ++
+ labs/lab1/exercises/2-separate-compilation/fns-compare.cc |  30 ++
+ labs/lab1/exercises/2-separate-compilation/fns-compare.hh |  14 +
+ labs/lab1/exercises/2-separate-compilation/linear.cc      |  11 +
+ labs/lab1/exercises/3-makefile/Makefile                   |  26 ++
+ labs/lab1/exercises/3-makefile/constant.cc                |  11 +
+ labs/lab1/exercises/3-makefile/cubic.cc                   |  12 +
+ labs/lab1/exercises/3-makefile/exponential.cc             |  13 +
+ labs/lab1/exercises/3-makefile/fact.cc                    |  13 +
+ labs/lab1/exercises/3-makefile/fns-compare.cc             |  33 ++
+ labs/lab1/exercises/3-makefile/fns-compare.hh             |  20 +
+ labs/lab1/exercises/3-makefile/lg.cc                      |  13 +
+ labs/lab1/exercises/3-makefile/linear.cc                  |  11 +
+ labs/lab1/exercises/3-makefile/nlg.cc                     |  13 +
+ labs/lab1/exercises/3-makefile/quadratic.cc               |  12 +
+ labs/lab1/exercises/4-dependencies/Makefile               |  36 ++
+ labs/lab1/exercises/4-dependencies/constant.cc            |  11 +
+ labs/lab1/exercises/4-dependencies/cubic.cc               |  12 +
+ labs/lab1/exercises/4-dependencies/exponential.cc         |  13 +
+ labs/lab1/exercises/4-dependencies/fact.cc                |  13 +
+ labs/lab1/exercises/4-dependencies/fns-compare.cc         |  32 ++
+ labs/lab1/exercises/4-dependencies/fns-compare.hh         |  20 +
+ labs/lab1/exercises/4-dependencies/lg.cc                  |  13 +
+ labs/lab1/exercises/4-dependencies/linear.cc              |  11 +
+ labs/lab1/exercises/4-dependencies/nlg.cc                 |  13 +
+ labs/lab1/exercises/4-dependencies/quadratic.cc           |  12 +
+ labs/lab1/exercises/5-auto-dependencies/.gitignore        |   2 +
+ labs/lab1/exercises/5-auto-dependencies/Makefile          |  54 +++
+ labs/lab1/exercises/5-auto-dependencies/constant.cc       |  11 +
+ labs/lab1/exercises/5-auto-dependencies/cubic.cc          |  12 +
+ labs/lab1/exercises/5-auto-dependencies/exponential.cc    |  13 +
+ labs/lab1/exercises/5-auto-dependencies/fact.cc           |  13 +
+ labs/lab1/exercises/5-auto-dependencies/fns-compare.cc    |  33 ++
+ labs/lab1/exercises/5-auto-dependencies/fns-compare.hh    |  20 +
+ labs/lab1/exercises/5-auto-dependencies/lg.cc             |  13 +
+ labs/lab1/exercises/5-auto-dependencies/linear.cc         |  11 +
+ labs/lab1/exercises/5-auto-dependencies/nlg.cc            |  13 +
+ labs/lab1/exercises/5-auto-dependencies/quadratic.cc      |  12 +
+ labs/lab1/lab1.html                                       | 428 +++++++++++++++++++
+ labs/lab1/lab1.pdf                                        | Bin 0 -> 145820 bytes
+ labs/lab1/lab1.umt                                        | 614 +++++++++++++++++++++++++++
+ labs/lab1/lab1/hl-fine_blue.css                           |  19 +
+ labs/lab1/lab1/hl-fine_blue.sty                           |  19 +
+ labs/submission/submission.html                           | 107 +++++
+ labs/submission/submission.pdf                            | Bin 0 -> 62238 bytes
+ labs/submission/submission.umt                            | 127 ++++++
+ labs/submission/submission/hl-fine_blue.css               |  19 +
+ labs/submission/submission/hl-fine_blue.sty               |  19 +
+ misc/grading-guidelines/grading-guidelines.html           |  10 +-
+ misc/grading-guidelines/grading-guidelines.pdf            | Bin 75084 -> 74711 bytes
+ misc/grading-guidelines/grading-guidelines.umt            |  10 +-
+ slides/c++-intro/c++-intro.html                           | 350 ++++++++++++++++
+ slides/c++-intro/c++-intro.pdf                            | Bin 0 -> 167175 bytes
+ slides/c++-intro/c++-intro.umt                            | 625 ++++++++++++++++++++++++++++
+ slides/c++-intro/c++-intro/hl-fine_blue.css               |  19 +
+ slides/c++-intro/c++-intro/hl-fine_blue.sty               |  19 +
+ slides/c++-intro/code/Makefile                            |  11 +
+ slides/c++-intro/code/hello.cc                            |   5 +
+ slides/c++-intro/code/sum-array.cc                        |  35 ++
+ slides/index.html                                         |   3 +
+ slides/index.umt                                          |   1 +
+ slides/intro/intro.html                                   |  20 +-
+ slides/intro/intro.pdf                                    | Bin 111642 -> 111713 bytes
+ slides/intro/intro.umt                                    |  10 +-
+ slides/syllabus/Makefile                                  |  22 -
+ slides/syllabus/syllabus.html                             |  24 +-
+ slides/syllabus/syllabus.pdf                              | Bin 135182 -> 135647 bytes
+ slides/syllabus/syllabus.umt                              |  24 +-
+ 85 files changed, 3180 insertions(+), 238 deletions(-)
+ delete mode 100644 labs/lab-tips/lab-tips.html
+ delete mode 100644 labs/lab-tips/lab-tips.pdf
+ delete mode 100644 labs/lab-tips/lab-tips.umt
+ create mode 100644 labs/lab1/.gitignore
+ create mode 100644 labs/lab1/exercises/.gitignore
+ create mode 100644 labs/lab1/exercises/0-hello/.gitignore
+ create mode 100644 labs/lab1/exercises/0-hello/hello.cc
+ create mode 100644 labs/lab1/exercises/1-monolithic/fns-compare.cc
+ create mode 100644 labs/lab1/exercises/2-separate-compilation/fns-compare.cc
+ create mode 100644 labs/lab1/exercises/2-separate-compilation/fns-compare.hh
+ create mode 100644 labs/lab1/exercises/2-separate-compilation/linear.cc
+ create mode 100644 labs/lab1/exercises/3-makefile/Makefile
+ create mode 100644 labs/lab1/exercises/3-makefile/constant.cc
+ create mode 100644 labs/lab1/exercises/3-makefile/cubic.cc
+ create mode 100644 labs/lab1/exercises/3-makefile/exponential.cc
+ create mode 100644 labs/lab1/exercises/3-makefile/fact.cc
+ create mode 100644 labs/lab1/exercises/3-makefile/fns-compare.cc
+ create mode 100644 labs/lab1/exercises/3-makefile/fns-compare.hh
+ create mode 100644 labs/lab1/exercises/3-makefile/lg.cc
+ create mode 100644 labs/lab1/exercises/3-makefile/linear.cc
+ create mode 100644 labs/lab1/exercises/3-makefile/nlg.cc
+ create mode 100644 labs/lab1/exercises/3-makefile/quadratic.cc
+ create mode 100644 labs/lab1/exercises/4-dependencies/Makefile
+ create mode 100644 labs/lab1/exercises/4-dependencies/constant.cc
+ create mode 100644 labs/lab1/exercises/4-dependencies/cubic.cc
+ create mode 100644 labs/lab1/exercises/4-dependencies/exponential.cc
+ create mode 100644 labs/lab1/exercises/4-dependencies/fact.cc
+ create mode 100644 labs/lab1/exercises/4-dependencies/fns-compare.cc
+ create mode 100644 labs/lab1/exercises/4-dependencies/fns-compare.hh
+ create mode 100644 labs/lab1/exercises/4-dependencies/lg.cc
+ create mode 100644 labs/lab1/exercises/4-dependencies/linear.cc
+ create mode 100644 labs/lab1/exercises/4-dependencies/nlg.cc
+ create mode 100644 labs/lab1/exercises/4-dependencies/quadratic.cc
+ create mode 100644 labs/lab1/exercises/5-auto-dependencies/.gitignore
+ create mode 100644 labs/lab1/exercises/5-auto-dependencies/Makefile
+ create mode 100644 labs/lab1/exercises/5-auto-dependencies/constant.cc
+ create mode 100644 labs/lab1/exercises/5-auto-dependencies/cubic.cc
+ create mode 100644 labs/lab1/exercises/5-auto-dependencies/exponential.cc
+ create mode 100644 labs/lab1/exercises/5-auto-dependencies/fact.cc
+ create mode 100644 labs/lab1/exercises/5-auto-dependencies/fns-compare.cc
+ create mode 100644 labs/lab1/exercises/5-auto-dependencies/fns-compare.hh
+ create mode 100644 labs/lab1/exercises/5-auto-dependencies/lg.cc
+ create mode 100644 labs/lab1/exercises/5-auto-dependencies/linear.cc
+ create mode 100644 labs/lab1/exercises/5-auto-dependencies/nlg.cc
+ create mode 100644 labs/lab1/exercises/5-auto-dependencies/quadratic.cc
+ create mode 100644 labs/lab1/lab1.html
+ create mode 100644 labs/lab1/lab1.pdf
+ create mode 100644 labs/lab1/lab1.umt
+ create mode 100644 labs/lab1/lab1/hl-fine_blue.css
+ create mode 100644 labs/lab1/lab1/hl-fine_blue.sty
+ create mode 100644 labs/submission/submission.html
+ create mode 100644 labs/submission/submission.pdf
+ create mode 100644 labs/submission/submission.umt
+ create mode 100644 labs/submission/submission/hl-fine_blue.css
+ create mode 100644 labs/submission/submission/hl-fine_blue.sty
+ create mode 100644 slides/c++-intro/c++-intro.html
+ create mode 100644 slides/c++-intro/c++-intro.pdf
+ create mode 100644 slides/c++-intro/c++-intro.umt
+ create mode 100644 slides/c++-intro/c++-intro/hl-fine_blue.css
+ create mode 100644 slides/c++-intro/c++-intro/hl-fine_blue.sty
+ create mode 100644 slides/c++-intro/code/Makefile
+ create mode 100644 slides/c++-intro/code/hello.cc
+ create mode 100644 slides/c++-intro/code/sum-array.cc
+ delete mode 100644 slides/syllabus/Makefile
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/cs240$ cd ~/i240?/submit/lab1
+bash: cd: /home/mmuffol1/i240?/submit/lab1: No such file or directory
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/cs240$ cd ~/i240/submit/lab1
+bash: cd: /home/mmuffol1/i240/submit/lab1: No such file or directory
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/cs240$ cd ~/i240a/submit/lab1
+bash: cd: /home/mmuffol1/i240a/submit/lab1: No such file or directory
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/cs240$ cd ~/i240a/submit
+mmuffol1@g7-19:~/i240a/submit$ mkdir lab1
+mmuffol1@g7-19:~/i240a/submit$ cd lab1
+mmuffol1@g7-19:~/i240a/submit/lab1$ -r ~/cs240/labs/lab1/exercises/* .
+bash: -r: command not found
+mmuffol1@g7-19:~/i240a/submit/lab1$ cp -r ~/cs240/labs/lab1/exercises/* .
+mmuffol1@g7-19:~/i240a/submit/lab1$ cp -r ~/cs240/labs/lab1/.gitignore/* .
+cp: cannot stat '/home/mmuffol1/cs240/labs/lab1/.gitignore/*': Not a directory
+mmuffol1@g7-19:~/i240a/submit/lab1$ cd ~/i240a/submit/lab1/0-hello
+mmuffol1@g7-19:~/i240a/submit/lab1/0-hello$ ls -l
+total 4
+-rw-r--r-- 1 mmuffol1 mmuffol1 79 Jan 30 13:36 hello.cc
+mmuffol1@g7-19:~/i240a/submit/lab1/0-hello$ make
+make: *** No targets specified and no makefile found.  Stop.
+mmuffol1@g7-19:~/i240a/submit/lab1/0-hello$ make hello.
+make: *** No rule to make target 'hello.'.  Stop.
+mmuffol1@g7-19:~/i240a/submit/lab1/0-hello$ ls -l
+total 4
+-rw-r--r-- 1 mmuffol1 mmuffol1 79 Jan 30 13:36 hello.cc
+mmuffol1@g7-19:~/i240a/submit/lab1/0-hello$ make hello.cc
+make: Nothing to be done for 'hello.cc'.
+mmuffol1@g7-19:~/i240a/submit/lab1/0-hello$ ls -l
+total 4
+-rw-r--r-- 1 mmuffol1 mmuffol1 79 Jan 30 13:36 hello.cc
+mmuffol1@g7-19:~/i240a/submit/lab1/0-hello$ make hello
+g++     hello.cc   -o hello
+mmuffol1@g7-19:~/i240a/submit/lab1/0-hello$ ls -l
+total 24
+-rwxr-xr-x 1 mmuffol1 mmuffol1 17248 Jan 30 13:42 hello
+-rw-r--r-- 1 mmuffol1 mmuffol1    79 Jan 30 13:36 hello.cc
+mmuffol1@g7-19:~/i240a/submit/lab1/0-hello$ hello
+bash: hello: command not found
+mmuffol1@g7-19:~/i240a/submit/lab1/0-hello$ ./hello
+hello world
+mmuffol1@g7-19:~/i240a/submit/lab1/0-hello$ cd
+mmuffol1@g7-19:~$ cd ~/i240a/submit/lab1/1-monolithic
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ fns-compare.cc
+bash: fns-compare.cc: command not found
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ make fns-compare
+g++     fns-compare.cc   -o fns-compare
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ ./fns-compare
+1 100000
+10 1e+06
+100 1e+07
+1000 1e+08
+10000 1e+09
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ g++ -g -Wall -std=c++17 fns-compare.cc -o fns-compare
+fns-compare.cc:11:1: warning: ‘double quadratic(double)’ defined but not used [-Wunused-function]
+ quadratic(double n)
+ ^~~~~~~~~
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ gedit fns-compare
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ gedit fns-compare.cc
+
+(gedit:198438): Gtk-WARNING **: 13:56:18.540: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ ./fns-compare
+1 100000
+10 1e+06
+100 1e+07
+1000 1e+08
+10000 1e+09
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ g++ -g -Wall -std=c++17 fns-compare.cc -o fns-compare
+fns-compare.cc: In function ‘int main()’:
+fns-compare.cc:22:18: warning: too many arguments for format [-Wformat-extra-args]
+     fprintf(out, "%g %g\n", n, linear(n), quadratic(n));
+                  ^~~~~~~~~
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ gedit fns-compare.cc
+
+(gedit:198572): Gtk-WARNING **: 13:57:17.053: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ ./fns-compare
+1 100000
+10 1e+06
+100 1e+07
+1000 1e+08
+10000 1e+09
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ g++ -g -Wall -std=c++17 fns-compare.cc -o fns-compare
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ gedit fns-compare.cc
+
+(gedit:198731): Gtk-WARNING **: 13:58:35.445: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ ./fns-compare
+1 100000
+ 1000
+10 1e+06
+ 100000
+100 1e+07
+ 1e+07
+1000 1e+08
+ 1e+09
+10000 1e+09
+ 1e+11
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ gedit fns-compare.cc
+
+(gedit:198796): Gtk-WARNING **: 13:59:00.357: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ ./fns-compare
+1 100000
+ 1000
+10 1e+06
+ 100000
+100 1e+07
+ 1e+07
+1000 1e+08
+ 1e+09
+10000 1e+09
+ 1e+11
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ gedit fns-compare.cc
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ ./fns-compare
+1 100000
+ 1000
+10 1e+06
+ 100000
+100 1e+07
+ 1e+07
+1000 1e+08
+ 1e+09
+10000 1e+09
+ 1e+11
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ cd ..
+mmuffol1@g7-19:~/i240a/submit/lab1$ 1-monolithics
+bash: 1-monolithics: command not found
+mmuffol1@g7-19:~/i240a/submit/lab1$ cd 1-monolithics
+bash: cd: 1-monolithics: No such file or directory
+mmuffol1@g7-19:~/i240a/submit/lab1$ cd ~/i240a/submit/lab1/1-monolithic
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ ./fns-compare
+1 100000
+ 1000
+10 1e+06
+ 100000
+100 1e+07
+ 1e+07
+1000 1e+08
+ 1e+09
+10000 1e+09
+ 1e+11
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ gedit fns-compare.cc
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ make clean
+make: *** No rule to make target 'clean'.  Stop.
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ make
+make: *** No targets specified and no makefile found.  Stop.
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ ls
+fns-compare  fns-compare.cc
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ ./fns-compare
+1 100000
+ 1000
+10 1e+06
+ 100000
+100 1e+07
+ 1e+07
+1000 1e+08
+ 1e+09
+10000 1e+09
+ 1e+11
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ g++ -g -Wall -std=c++17 fns-compare.cc -o fns-compare
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ ls
+fns-compare  fns-compare.cc
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ ./fns-compare 
+1 100000
+ 1000
+10 1e+06
+ 100000
+100 1e+07
+ 1e+07
+1000 1e+08
+ 1e+09
+10000 1e+09
+ 1e+11
+mmuffol1@g7-19:~/i240a/submit/lab1/1-monolithic$ cd ..
+mmuffol1@g7-19:~/i240a/submit/lab1$ cd 2-separate-compilation
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ ls -l
+total 12
+-rw-r--r-- 1 mmuffol1 mmuffol1 706 Jan 30 13:36 fns-compare.cc
+-rw-r--r-- 1 mmuffol1 mmuffol1 237 Jan 30 13:36 fns-compare.hh
+-rw-r--r-- 1 mmuffol1 mmuffol1 173 Jan 30 13:36 linear.cc
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c fns-compare.cc
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c linear.cc
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ g++ fns-compare.o linear.o -o fns-compare
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ ./fns-compare
+         n    linear
+         1     10000
+        10    100000
+       100     1e+06
+      1000     1e+07
+     10000     1e+08
+    100000     1e+09
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ cd ..
+mmuffol1@g7-19:~/i240a/submit/lab1$ gedit 1-monolithic/fns-compare.cc
+mmuffol1@g7-19:~/i240a/submit/lab1$ cd 2-separate-compilation
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ gedit linear.o
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ gedit linear.cc
+
+(gedit:200548): Gtk-WARNING **: 14:13:49.484: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+ls
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ ls
+fns-compare  fns-compare.cc  fns-compare.hh  fns-compare.o  linear.cc  linear.o
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ ls
+fns-compare  fns-compare.cc  fns-compare.hh  fns-compare.o  linear.cc  linear.o
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ gedit quadratic.cc &
+[1] 201080
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ gedit linear.cc &
+[2] 201124
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ 
+(gedit:201080): Gtk-WARNING **: 14:18:52.654: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+[2]+  Done                    gedit linear.cc
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c quadratic.cc
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ g++ fns-compare.o linear.o quadratic.o -o fns-compare
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ fns-compare.cc
+bash: fns-compare.cc: command not found
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ ./fns-compare
+         n    linear quadratic
+         1     10000      1000
+        10    100000    100000
+       100     1e+06     1e+07
+      1000     1e+07     1e+09
+     10000     1e+08     1e+11
+    100000     1e+09     1e+13
+mmuffol1@g7-19:~/i240a/submit/lab1/2-separate-compilation$ cd ..
+mmuffol1@g7-19:~/i240a/submit/lab1$ cd makefile
+bash: cd: makefile: No such file or directory
+mmuffol1@g7-19:~/i240a/submit/lab1$ cd 3-makefile
+mmuffol1@g7-19:~/i240a/submit/lab1/3-makefile$ make
+g++ -g -Wall -std=c++17   -c -o fns-compare.o fns-compare.cc
+g++ -g -Wall -std=c++17   -c -o constant.o constant.cc
+g++ -g -Wall -std=c++17   -c -o lg.o lg.cc
+g++ -g -Wall -std=c++17   -c -o linear.o linear.cc
+g++ -g -Wall -std=c++17   -c -o nlg.o nlg.cc
+g++ -g -Wall -std=c++17   -c -o quadratic.o quadratic.cc
+g++ -g -Wall -std=c++17   -c -o cubic.o cubic.cc
+g++ -g -Wall -std=c++17   -c -o exponential.o exponential.cc
+g++ -g -Wall -std=c++17   -c -o fact.o fact.cc
+g++ fns-compare.o constant.o lg.o linear.o nlg.o quadratic.o cubic.o exponential.o fact.o -o fns-compare
+mmuffol1@g7-19:~/i240a/submit/lab1/3-makefile$ ./fns-compare
+    n constant     log2   linear     n lg    quadr    cubic     expn     fact
+    1    1e+07        0    1e+05        0    1e+03    1e+02       20        1
+   10    1e+07  3.3e+06    1e+06  3.3e+05    1e+05    1e+05    1e+04  3.6e+06
+  100    1e+07  6.6e+06    1e+07  6.6e+06    1e+07    1e+08  1.3e+31 9.3e+157
+ 1000    1e+07    1e+07    1e+08    1e+08    1e+09    1e+11 1.1e+302      inf
+10000    1e+07  1.3e+07    1e+09  1.3e+09    1e+11    1e+14      inf      inf
+mmuffol1@g7-19:~/i240a/submit/lab1/3-makefile$ gedit fns-compare.hh &
+[2] 201936
+mmuffol1@g7-19:~/i240a/submit/lab1/3-makefile$ cd ..
+[1]-  Done                    gedit quadratic.cc  (wd: ~/i240a/submit/lab1/2-separate-compilation)
+(wd now: ~/i240a/submit/lab1)
+[2]+  Done                    gedit fns-compare.hh  (wd: ~/i240a/submit/lab1/3-makefile)
+(wd now: ~/i240a/submit/lab1)
+mmuffol1@g7-19:~/i240a/submit/lab1$ cd 3-makefiles
+bash: cd: 3-makefiles: No such file or directory
+mmuffol1@g7-19:~/i240a/submit/lab1$ cd 3-makefile
+mmuffol1@g7-19:~/i240a/submit/lab1/3-makefile$ make
+make: Nothing to be done for 'all'.
+mmuffol1@g7-19:~/i240a/submit/lab1/3-makefile$ cd ..
+mmuffol1@g7-19:~/i240a/submit/lab1$ 4-dependencies
+bash: 4-dependencies: command not found
+mmuffol1@g7-19:~/i240a/submit/lab1$ cd 4-dependencies
+mmuffol1@g7-19:~/i240a/submit/lab1/4-dependencies$ gedit Makefile &
+[1] 202372
+mmuffol1@g7-19:~/i240a/submit/lab1/4-dependencies$ 
+(gedit:202372): Gtk-WARNING **: 14:32:06.507: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+[1]+  Done                    gedit Makefile
+mmuffol1@g7-19:~/i240a/submit/lab1/4-dependencies$ make
+Makefile:20: *** missing separator.  Stop.
+mmuffol1@g7-19:~/i240a/submit/lab1/4-dependencies$ gedit Makefile &
+[1] 202717
+mmuffol1@g7-19:~/i240a/submit/lab1/4-dependencies$ 
+(gedit:202717): Gtk-WARNING **: 14:32:52.827: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+[1]+  Done                    gedit Makefile
+mmuffol1@g7-19:~/i240a/submit/lab1/4-dependencies$ make
+g++ -g -Wall -std=c++17   -c -o fns-compare.o fns-compare.cc
+g++ -g -Wall -std=c++17   -c -o constant.o constant.cc
+g++ -g -Wall -std=c++17   -c -o lg.o lg.cc
+g++ -g -Wall -std=c++17   -c -o linear.o linear.cc
+g++ -g -Wall -std=c++17   -c -o nlg.o nlg.cc
+g++ -g -Wall -std=c++17   -c -o quadratic.o quadratic.cc
+g++ -g -Wall -std=c++17   -c -o cubic.o cubic.cc
+g++ -g -Wall -std=c++17   -c -o exponential.o exponential.cc
+g++ -g -Wall -std=c++17   -c -o fact.o fact.cc
+g++ fns-compare.o constant.o lg.o linear.o nlg.o quadratic.o cubic.o exponential.o fact.o -o fns-compare
+mmuffol1@g7-19:~/i240a/submit/lab1/4-dependencies$ gedit fns-compare.hh &
+[1] 202875
+mmuffol1@g7-19:~/i240a/submit/lab1/4-dependencies$ 
+(gedit:202875): Gtk-WARNING **: 14:33:57.610: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+[1]+  Done                    gedit fns-compare.hh
+mmuffol1@g7-19:~/i240a/submit/lab1/4-dependencies$ gedit fns-compare.hh &
+[1] 202961
+mmuffol1@g7-19:~/i240a/submit/lab1/4-dependencies$ make
+g++ -g -Wall -std=c++17   -c -o fns-compare.o fns-compare.cc
+fns-compare.cc: In function ‘int main()’:
+fns-compare.cc:28:20: warning: format ‘%Lg’ expects argument of type ‘long double’, but argument 5 has type ‘double’ [-Wformat=]
+       fprintf(out, "%*.*Lg", WIDTH, PREC, fnInfo.fn(n));
+                    ^~~~~~~~               ~~~~~~~~~~~~
+g++ -g -Wall -std=c++17   -c -o constant.o constant.cc
+g++ -g -Wall -std=c++17   -c -o lg.o lg.cc
+g++ -g -Wall -std=c++17   -c -o linear.o linear.cc
+g++ -g -Wall -std=c++17   -c -o nlg.o nlg.cc
+g++ -g -Wall -std=c++17   -c -o quadratic.o quadratic.cc
+g++ -g -Wall -std=c++17   -c -o cubic.o cubic.cc
+g++ -g -Wall -std=c++17   -c -o exponential.o exponential.cc
+g++ -g -Wall -std=c++17   -c -o fact.o fact.cc
+g++ fns-compare.o constant.o lg.o linear.o nlg.o quadratic.o cubic.o exponential.o fact.o -o fns-compare
+[1]+  Done                    gedit fns-compare.hh
+mmuffol1@g7-19:~/i240a/submit/lab1/4-dependencies$ gedit fns-compare.cc &
+[1] 203157
+mmuffol1@g7-19:~/i240a/submit/lab1/4-dependencies$ gedit fns-compare.hh &
+[2] 203285
+[1]   Done                    gedit fns-compare.cc
+mmuffol1@g7-19:~/i240a/submit/lab1/4-dependencies$ 
+(gedit:203285): Gtk-WARNING **: 14:37:09.757: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+gedit fns-compare.cc &
+[3] 203414
+[2]   Done                    gedit fns-compare.hh
+mmuffol1@g7-19:~/i240a/submit/lab1/4-dependencies$ cd ..
+[3]+  Done                    gedit fns-compare.cc  (wd: ~/i240a/submit/lab1/4-dependencies)
+(wd now: ~/i240a/submit/lab1)
+mmuffol1@g7-19:~/i240a/submit/lab1$ cd 5-auto-dependencies
+mmuffol1@g7-19:~/i240a/submit/lab1/5-auto-dependencies$ make
+g++ -MT linear.o -MMD -MP -MF .deps/linear.d -g -Wall -std=c++17 -c linear.cc
+g++ -MT nlg.o -MMD -MP -MF .deps/nlg.d -g -Wall -std=c++17 -c nlg.cc
+g++ -MT fact.o -MMD -MP -MF .deps/fact.d -g -Wall -std=c++17 -c fact.cc
+g++ -MT lg.o -MMD -MP -MF .deps/lg.d -g -Wall -std=c++17 -c lg.cc
+g++ -MT cubic.o -MMD -MP -MF .deps/cubic.d -g -Wall -std=c++17 -c cubic.cc
+g++ -MT exponential.o -MMD -MP -MF .deps/exponential.d -g -Wall -std=c++17 -c exponential.cc
+g++ -MT fns-compare.o -MMD -MP -MF .deps/fns-compare.d -g -Wall -std=c++17 -c fns-compare.cc
+g++ -MT constant.o -MMD -MP -MF .deps/constant.d -g -Wall -std=c++17 -c constant.cc
+g++ -MT quadratic.o -MMD -MP -MF .deps/quadratic.d -g -Wall -std=c++17 -c quadratic.cc
+g++ linear.o nlg.o fact.o lg.o cubic.o exponential.o fns-compare.o constant.o quadratic.o -o fns-compare
+mmuffol1@g7-19:~/i240a/submit/lab1/5-auto-dependencies$ ./fns-compare
+    n   linear     n lg     fact     log2    cubic     expn constant    quadr
+    1    1e+05        0        1        0    1e+02       20    1e+07    1e+03
+   10    1e+06  3.3e+05  3.6e+06  3.3e+06    1e+05    1e+04    1e+07    1e+05
+  100    1e+07  6.6e+06 9.3e+157  6.6e+06    1e+08  1.3e+31    1e+07    1e+07
+ 1000    1e+08    1e+08      inf    1e+07    1e+11 1.1e+302    1e+07    1e+09
+10000    1e+09  1.3e+09      inf  1.3e+07    1e+14      inf    1e+07    1e+11
+mmuffol1@g7-19:~/i240a/submit/lab1/5-auto-dependencies$ tar -cf fns-compare.tar SRC_FILE...
+tar: SRC_FILE...: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+mmuffol1@g7-19:~/i240a/submit/lab1/5-auto-dependencies$ tar man
+tar: You must specify one of the '-Acdtrux', '--delete' or '--test-label' options
+Try 'tar --help' or 'tar --usage' for more information.
+mmuffol1@g7-19:~/i240a/submit/lab1/5-auto-dependencies$ tar -cf fns-compare.tar Makefile constant.cc fact.cc exponential.cc cubic.cc fns-compare.cc fns-compare.hh lg.cc linear.cc nlg.cc quadratic.cc
+mmuffol1@g7-19:~/i240a/submit/lab1/5-auto-dependencies$ make
+make: Nothing to be done for 'all'.
+mmuffol1@g7-19:~/i240a/submit/lab1/5-auto-dependencies$ mkdir -p ~/tmp/fns-compare
+mmuffol1@g7-19:~/i240a/submit/lab1/5-auto-dependencies$ cd ~/tmp/fns-compare
+mmuffol1@g7-19:~/tmp/fns-compare$ tar -xvf ~/i240?/submit/lab1/5*/fns-compare.tar
+Makefile
+constant.cc
+fact.cc
+exponential.cc
+cubic.cc
+fns-compare.cc
+fns-compare.hh
+lg.cc
+linear.cc
+nlg.cc
+quadratic.cc
+mmuffol1@g7-19:~/tmp/fns-compare$ make
+g++ -MT linear.o -MMD -MP -MF .deps/linear.d -g -Wall -std=c++17 -c linear.cc
+g++ -MT nlg.o -MMD -MP -MF .deps/nlg.d -g -Wall -std=c++17 -c nlg.cc
+g++ -MT fact.o -MMD -MP -MF .deps/fact.d -g -Wall -std=c++17 -c fact.cc
+g++ -MT lg.o -MMD -MP -MF .deps/lg.d -g -Wall -std=c++17 -c lg.cc
+g++ -MT cubic.o -MMD -MP -MF .deps/cubic.d -g -Wall -std=c++17 -c cubic.cc
+g++ -MT exponential.o -MMD -MP -MF .deps/exponential.d -g -Wall -std=c++17 -c exponential.cc
+g++ -MT fns-compare.o -MMD -MP -MF .deps/fns-compare.d -g -Wall -std=c++17 -c fns-compare.cc
+g++ -MT constant.o -MMD -MP -MF .deps/constant.d -g -Wall -std=c++17 -c constant.cc
+g++ -MT quadratic.o -MMD -MP -MF .deps/quadratic.d -g -Wall -std=c++17 -c quadratic.cc
+g++ linear.o nlg.o fact.o lg.o cubic.o exponential.o fns-compare.o constant.o quadratic.o -o fns-compare
+mmuffol1@g7-19:~/tmp/fns-compare$ ./fns-compare
+    n   linear     n lg     fact     log2    cubic     expn constant    quadr
+    1    1e+05        0        1        0    1e+02       20    1e+07    1e+03
+   10    1e+06  3.3e+05  3.6e+06  3.3e+06    1e+05    1e+04    1e+07    1e+05
+  100    1e+07  6.6e+06 9.3e+157  6.6e+06    1e+08  1.3e+31    1e+07    1e+07
+ 1000    1e+08    1e+08      inf    1e+07    1e+11 1.1e+302    1e+07    1e+09
+10000    1e+09  1.3e+09      inf  1.3e+07    1e+14      inf    1e+07    1e+11
+
