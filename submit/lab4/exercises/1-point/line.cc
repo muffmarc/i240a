@@ -1,16 +1,15 @@
 #include "line.hh"
 #include "point.hh"
-#include "point.cc"
 #include <cmath>
 #include <string>
 #include <sstream>
 
-double Line::length(const Point& other) const{
-	x.distance(y);
+double Line::length() const {
+	return x.distance(y);
 }
 
 std::string Line::toString() const {
 	std::stringstream s;
-	s << "(" << x.toString() << ", " << y.toString << ")";  
+	s << x.toString() << " -- " << y.toString() << " length = " << length();  
 	return s.str(); 
 }

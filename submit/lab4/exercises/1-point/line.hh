@@ -8,7 +8,7 @@ struct Line{
 
 	Line(Point x=Point(), Point y=Point()) : x(x), y(y){}
 
-	double length(const Point& other) const;
+	double length() const;
 
 	std::string toString() const;
 
