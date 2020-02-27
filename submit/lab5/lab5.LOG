@@ -1400,4 +1400,117 @@ In file included from [01m[Kmain.cc:1[m[K:
    std::string dcCode() const { return [01;31m[Kleft->eval() + " " + right->eval() + " + "[m[K; }
                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
 make: *** [../Makefile:48: main.o] Error 1
-mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5/exercises/2-expr$ make -f ../Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main[5P "- 3 2"\ "* + 1 2 5"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -[7Pf ../Ma
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5/exercises/2-expr$ make -f ../Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main[5P "- 3 2"\ "* + 1 2 5"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -[7Pf ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ -MT parse.o -MMD -MP -MF .deps/parse.d -g -Wall -std=c++17 -c parse.cc
+g++ -MT expr.o -MMD -MP -MF .deps/expr.d -g -Wall -std=c++17 -c expr.cc
+g++ tostring.o main.o parse.o expr.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main tostring.o main.o parse.o expr.o; do echo $t >>.gitignore; done
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5/exercises/2-expr$ make -f ../Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main[5P "- 3 2"
+*  p c
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5/exercises/2-expr$ ./main "- 3 2"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ -MT parse.o -MMD -MP -MF .deps/parse.d -g -Wall -std=c++17 -c parse.cc
+g++ -MT expr.o -MMD -MP -MF .deps/expr.d -g -Wall -std=c++17 -c expr.cc
+g++ tostring.o main.o parse.o expr.o -o main
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5/exercises/2-expr$ make -f ../Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main[5P "- 3 2"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main[5P "- 3 2"\[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main[5P "- 3 2"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main[5P "- 3 2"
+3 2 -  p c
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5/exercises/2-expr$ ./main "- 3 2" |dc
+1
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5/exercises/2-expr$ ./main "- 3 2" "* + 1 2 5" | dc
+1
+15
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5/exercises/2-expr$ ./main  "+ + + / 22  6 * 5 3 - 2 5 * 3 5" | dc
+30
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5/exercises/2-expr$ 30
+bash: 30: command not found
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5/exercises/2-expr$ ./main  "+ + + / 22  6 * 5 3 - 2 5 * 3 5" | dc
+30
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5/exercises/2-expr$ cd [K .. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K.
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5/exercises$ cd ..
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5$ git add -A
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5$ git commit -am "comple ting lab5"
+[lab5 006a188] completing lab5
+ Committer: Marcus Muffoletto <mmuffol1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 15 files changed, 1926 insertions(+), 1 deletion(-)
+ create mode 100644 submit/lab5/exercises/1-animal/.gitignore
+ create mode 100644 submit/lab5/exercises/1-animal/.swp
+ create mode 100644 submit/lab5/exercises/1-animal/animal.hh
+ create mode 100644 submit/lab5/exercises/1-animal/main.cc
+ create mode 100644 submit/lab5/exercises/2-expr/.gitignore
+ create mode 100644 submit/lab5/exercises/2-expr/expr.cc
+ create mode 100644 submit/lab5/exercises/2-expr/expr.hh
+ create mode 100644 submit/lab5/exercises/2-expr/main.cc
+ create mode 100644 submit/lab5/exercises/2-expr/parse.cc
+ create mode 100644 submit/lab5/exercises/2-expr/parse.hh
+ create mode 100644 submit/lab5/exercises/2-expr/tostring.cc
+ create mode 100644 submit/lab5/exercises/2-expr/tostring.hh
+ create mode 100644 submit/lab5/exercises/Makefile
+ create mode 100644 submit/lab5/lab5.LOG
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5$ git pu8[Ksh
+fatal: The current branch lab5 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin lab5
+
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5$ git brant[Kch l[K-l
+[?1h=  lab0[m[m
+  lab2[m[m
+  lab3[m[m
+* [32mlab5[m[m
+  master[m[m
+  prj1-sol[m[m
+[K[?1l>mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5$ git merge -m "[K'mergeed[K[Kd m aster' master
+Already up to date.
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5$ git checkout ms[Kaster
+error: Your local changes to the following files would be overwritten by checkout:
+	submit/lab5/lab5.LOG
+Please commit your changes or stash them before you switch branches.
+Aborting
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5$ git commit "completing  lab5"
+error: pathspec 'completing lab5' did not match any file(s) known to git
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5$ git commit "completing lab5"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pheckout master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+error: Your local changes to the following files would be overwritten by checkout:
+	submit/lab5/lab5.LOG
+Please commit your changes or stash them before you switch branches.
+Aborting
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/projects/i240a/submit/lab5$ exit
+
+Script done on 2020-02-27 14:18:21-05:00 [COMMAND_EXIT_CODE="1"]
