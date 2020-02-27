@@ -2762,4 +2762,79 @@ g++ tostring.o point.o main.o -o main
 cat </dev/null >.gitignore
 echo .deps >.gitignore
 for t in main tostring.o point.o main.o; do echo $t >>.gitignore; done
-mmuffol1@g7-19:/import/linux/home1/mmuffol1/i240a/submit/lab4/exercises/2-shape$ make -f ../Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit shapes.hh main.cc &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Mak[6Pefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/i240a/submit/lab4/exercises/2-shape$ make -f ../Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit shapes.hh main.cc &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Mak[6Pefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit shapes.hh main.cc &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Mak[6Pefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main
+Circle[(0, 0), 1] perimeter: 6.28319
+Circle[(0, 0), 1] area: 3.14159
+Rectangle[(1, 1), (4, 5)] perimeter: 14
+Rectangle[(1, 1), (4, 5)] area: 12
+Circle[(1, 1), 2] perimeter: 12.5664
+Circle[(1, 1), 2] area: 12.5664
+Rectangle[(0, 0), (5, 4)] perimeter: 18
+Rectangle[(0, 0), (5, 4)] area: 20
+
+sizeof(double) = 8
+sizeof(Point) = 24
+
+sizeof(ToString) = 8
+sizeof(Shape) = 8
+sizeof(Circle) = 40
+sizeof(Rectangle) = 56
+
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/i240a/submit/lab4/exercises/2-shape$ git [K[K[K[Kcd ..
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/i240a/submit/lab4/exercises$ cd ..
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/i240a/submit/lab4$ git add point[K[K[K[K[K-A
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/i240a/submit/lab4$ git push[K[K[K[K[K[K[Kit add -a[KA
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/i240a/submit/lab4$ git commit "[K-am came to office h ours iwht [K[K[K[K[Kwith co[K[KConnor"
+> 
+> ^C
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/i240a/submit/lab4$ git commit -am came to office hours with Connor" 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"came to office h[1@o[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[master 0b87b2a] came to office hours with Connor
+ Committer: Marcus Muffoletto <mmuffol1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 25 files changed, 6206 insertions(+), 5 deletions(-)
+ create mode 100644 submit/lab4/exercises/1-point/.gitignore
+ create mode 100644 submit/lab4/exercises/1-point/lab4.LOG
+ create mode 100644 submit/lab4/exercises/1-point/main.cc
+ create mode 100644 submit/lab4/exercises/1-point/point.cc
+ create mode 100644 submit/lab4/exercises/1-point/point.hh
+ create mode 100644 submit/lab4/exercises/2-shape/.gitignore
+ create mode 100644 submit/lab4/exercises/2-shape/main.cc
+ create mode 100644 submit/lab4/exercises/2-shape/point.cc
+ create mode 100644 submit/lab4/exercises/2-shape/point.hh
+ create mode 100644 submit/lab4/exercises/2-shape/shapes.hh
+ create mode 100644 submit/lab4/exercises/2-shape/tostring.cc
+ create mode 100644 submit/lab4/exercises/2-shape/tostring.hh
+ create mode 100644 submit/lab4/exercises/3-expr/.gitignore
+ create mode 100644 submit/lab4/exercises/3-expr/expr.cc
+ create mode 100644 submit/lab4/exercises/3-expr/expr.hh
+ create mode 100644 submit/lab4/exercises/3-expr/main.cc
+ create mode 100644 submit/lab4/exercises/3-expr/parse.cc
+ create mode 100644 submit/lab4/exercises/3-expr/parse.hh
+ create mode 100644 submit/lab4/exercises/3-expr/tostring.cc
+ create mode 100644 submit/lab4/exercises/3-expr/tostring.hh
+ create mode 100644 submit/lab4/exercises/Makefile
+ rename submit/lab4/{lab4.LOG => lab4(1).LOG} (100%)
+ create mode 100644 submit/lab4/lab4(2).LOG
+mmuffol1@g7-19:/import/linux/home1/mmuffol1/i240a/submit/lab4$ git push
+Warning: Permanently added the RSA host key for IP address '140.82.113.3' to the list of known hosts.
+Enumerating objects: 37, done.
+Counting objects:   2% (1/37)   Counting objects:   5% (2/37)   Counting objects:   8% (3/37)   Counting objects:  10% (4/37)   Counting objects:  13% (5/37)   Counting objects:  16% (6/37)   Counting objects:  18% (7/37)   Counting objects:  21% (8/37)   Counting objects:  24% (9/37)   Counting objects:  27% (10/37)   Counting objects:  29% (11/37)   Counting objects:  32% (12/37)   Counting objects:  35% (13/37)   Counting objects:  37% (14/37)   Counting objects:  40% (15/37)   Counting objects:  43% (16/37)   Counting objects:  45% (17/37)   Counting objects:  48% (18/37)   Counting objects:  51% (19/37)   Counting objects:  54% (20/37)   Counting objects:  56% (21/37)   Counting objects:  59% (22/37)   Counting objects:  62% (23/37)   Counting objects:  64% (24/37)   Counting objects:  67% (25/37)   Counting objects:  70% (26/37)   Counting objects:  72% (27/37)   Counting objects:  75% (28/37)   Counting objects:  78% (29/37)   Counting objects:  81% (30/37)   Counting objects:  83% (31/37)   Counting objects:  86% (32/37)   Counting objects:  89% (33/37)   Counting objects:  91% (34/37)   Counting objects:  94% (35/37)   Counting objects:  97% (36/37)   Counting objects: 100% (37/37)   Counting objects: 100% (37/37), done.
+Delta compression using up to 4 threads
+Compressing objects:   3% (1/27)   Compressing objects:   7% (2/27)   Compressing objects:  11% (3/27)   Compressing objects:  14% (4/27)   Compressing objects:  18% (5/27)   Compressing objects:  22% (6/27)   Compressing objects:  25% (7/27)   Compressing objects:  29% (8/27)   Compressing objects:  33% (9/27)   Compressing objects:  37% (10/27)   Compressing objects:  40% (11/27)   Compressing objects:  44% (12/27)   Compressing objects:  48% (13/27)   Compressing objects:  51% (14/27)   Compressing objects:  55% (15/27)   Compressing objects:  59% (16/27)   Compressing objects:  62% (17/27)   Compressing objects:  66% (18/27)   Compressing objects:  70% (19/27)   Compressing objects:  74% (20/27)   Compressing objects:  77% (21/27)   Compressing objects:  81% (22/27)   Compressing objects:  85% (23/27)   Compressing objects:  88% (24/27)   Compressing objects:  92% (25/27)   Compressing objects:  96% (26/27)   Compressing objects: 100% (27/27)   Compressing objects: 100% (27/27), done.
+Writing objects:   3% (1/30)   Writing objects:   6% (2/30)   Writing objects:  10% (3/30)   Writing objects:  13% (4/30)   Writing objects:  16% (5/30)   Writing objects:  20% (6/30)   Writing objects:  23% (7/30)   Writing objects:  26% (8/30)   Writing objects:  30% (9/30)   Writing objects:  33% (10/30)   Writing objects:  36% (11/30)   Writing objects:  40% (12/30)   Writing objects:  43% (13/30)   Writing objects:  46% (14/30)   Writing objects:  50% (15/30)   Writing objects:  53% (16/30)   Writing objects:  56% (17/30)   Writing objects:  60% (18/30)   Writing objects:  63% (19/30)   Writing objects:  66% (20/30)   Writing objects:  70% (21/30)   Writing objects:  73% (22/30)   Writing objects:  76% (23/30)   Writing objects:  80% (24/30)   Writing objects:  83% (25/30)   Writing objects:  86% (26/30)   Writing objects:  90% (27/30)   Writing objects:  93% (28/30)   Writing objects:  96% (29/30)   Writing objects: 100% (30/30)   Writing objects: 100% (30/30), 16.41 KiB | 1.09 MiB/s, done.
+Total 30 (delta 5), reused 0 (delta 0)
+remote: Reso
