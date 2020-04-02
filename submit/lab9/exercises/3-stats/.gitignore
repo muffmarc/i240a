@@ -1,0 +1,6 @@
+.deps
+main
+sorts.o
+ops.o
+main.o
+ops2.o
