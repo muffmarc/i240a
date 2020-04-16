@@ -1,0 +1,549 @@
+Script started on 2020-04-16 13:19:46-04:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="75" LINES="24"]
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10$ cp -r ~/cs240/labs/lab10/exercises .
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10$ [Kmmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10$ [Kmmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10$ [Kmmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10$ [Kmmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10$ [Kmmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10$ [Kmmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10$ [Kmmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10$ [Kmmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10$ [Kmmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10$ [Kmmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10$ [Kmmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10$ [Kmmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10$ cd 1-fac t
+bash: cd: 1-fact: No such file or directory
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10$ cd exerc iseds[K[Ks/10fa[K[K[K-fact
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/1-fact$ make -f ../Makefile main
+g++ -I /home/mmuffol1/cs240/include -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ -I /home/mmuffol1/cs240/include -MT fact.o -MMD -MP -MF .deps/fact.d -g -Wall -std=c++17 -c fact.cc
+g++ main.o fact.o -o main
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/1-fact$ ./ main[K[K[K[K[Kmain 23[K 3 5 10
+2
+6
+120
+3628800
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/1-fact$ gedit f[Kts[Kest-man[Kin.cc &
+[1] 3886917
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/1-fact$ gedit test-main.cc &[C[C[C[C[C[C[C[C[C[5P./main 2 3 5 10[C[C[C[C[C[C[C[C[Cmake -f ../Makefile main[K[K[K[K[K test0[K0[K-main
+g++ -I /home/mmuffol1/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+g++ test-main.o fact.o -o test-main
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/1-fact$ ./test0[K-main
+[1;31m[0m[1;33m[0m[1;32m===============================================================================[0m
+[1;32mAll tests passed[0m (4 assertions in 1 test case)
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/1-fact$ ./main 0
+0
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/1-fact$ 
+(gedit:3886917): Gtk-[1;33mWARNING[0m **: [34m13:33:50.478[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+./main 0test-main
+[1;31m[0m[1;33m[0m[1;32m===============================================================================[0m
+[1;32mAll tests passed[0m (4 assertions in 1 test case)
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/1-fact$ ./test-main[3Pmain 0test-main[C[C[C[C[C[C[C[C[Cmake -f ../Makefile test-main
+g++ -I /home/mmuffol1/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+g++ test-main.o fact.o -o test-main
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/1-fact$ make -f ../Makefile test-main[C[C[C[C[C[C[C[C[C[18P./test-main
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0;37mtest-main is a Catch v2.11.3 host application.
+Run with -? for options
+
+[0m-------------------------------------------------------------------------------
+[0mFactorials are computed
+[0m-------------------------------------------------------------------------------
+[0;37mtest-main.cc:7
+...............................................................................
+
+[0m[0;37mtest-main.cc:8: [0m[1;31mFAILED:
+[0m[0;36m  REQUIRE( fact(0) == 1 )
+[0mwith expansion:
+[1;33m  0 == 1
+[0m
+[1;31m===============================================================================[0m[1;33m[0m[0;32m[0m
+test cases: 1[0;37m | [0m[1;31m1 failed[0m
+assertions: 1[0;37m | [0m[1;31m1 failed[0m
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/1-fact$ gedit fact.cc *[K*[K&
+[2] 3891195
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/1-fact$ gedit fact.cc &[C[C[C[C[C[C[C[C[C[4P./test-main[C[C[C[C[C[C[C[C[Cmake -f ../Makefile test-main[C[C[C[C[C[C[C[C[C[18P./test-main[3Pmain 0test-main[C[C[C[C[C[C[C[C[Cmake -f ../Makefile test-main[C[C[C[C[C[C[C[C[C[18P./test-main[C[C[C[C[C[C[C[C[Cmake -f ../Makefile test-main[C[C[C[C[C[C[C[C[C[9Pgedit test-main.cc &[C[C[C[C[C[C[C[C[C[5P./main 2 3 5 10[C[C[C[C[C[C[C[C[Cmake -f ../Makefile main
+g++ -I /home/mmuffol1/cs240/include -MT fact.o -MMD -MP -MF .deps/fact.d -g -Wall -std=c++17 -c fact.cc
+g++ main.o fact.o -o main
+[2]+  Done                    gedit fact.cc
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/1-fact$ ./main 0
+1
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/1-fact$ ./main 0make -f ../Makefile main[C[C[C[C[C[C[C[C[C[9Pgedit fact.cc &[C[C[C[C[C[C[C[C[C[4P./test-main
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0;37mtest-main is a Catch v2.11.3 host application.
+Run with -? for options
+
+[0m-------------------------------------------------------------------------------
+[0mFactorials are computed
+[0m-------------------------------------------------------------------------------
+[0;37mtest-main.cc:7
+...............................................................................
+
+[0m[0;37mtest-main.cc:8: [0m[1;31mFAILED:
+[0m[0;36m  REQUIRE( fact(0) == 1 )
+[0mwith expansion:
+[1;33m  0 == 1
+[0m
+[1;31m===============================================================================[0m[1;33m[0m[0;32m[0m
+test cases: 1[0;37m | [0m[1;31m1 failed[0m
+assertions: 1[0;37m | [0m[1;31m1 failed[0m
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/1-fact$ ./test-main[3Pmain 0make -f ../Makefile main[C[C[C[C[C[C[C[C[C[9Pgedit fact.cc &[C[C[C[C[C[C[C[C[C[4P./test-main[C[C[C[C[C[C[C[C[Cmake -f ../Makefile test-main
+g++ test-main.o fact.o -o test-main
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/1-fact$ make -f ../Makefile test-main[C[C[C[C[C[C[C[C[C[18P./test-main[3Pmain 0test-main
+[1;31m[0m[1;33m[0m[1;32m===============================================================================[0m
+[1;32mAll tests passed[0m (5 assertions in 1 test case)
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/1-fact$ f[K d ..[K[K[K[K[Kcd ..
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises$ 2-tdd
+bash: 2-tdd: command not found
+[1]+  Done                    gedit test-main.cc  (wd: /import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/1-fact)
+(wd now: /import/linux/home1/mmuffol1/i240a/submit/lab10/exercises)
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises$ d[K d[Kcd[K[K[Kcd 2-tdd
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make 0f[K[K-f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:8:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+g++ main.o digit-sum.o -o main
+g++ -I /home/mmuffol1/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+g++ test-main.o digit-sum.o -o test-main
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ gedit digit-sum.cc
+
+(gedit:3897116): Gtk-[1;33mWARNING[0m **: [34m13:51:15.254[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^[[A^[[A^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[Bclear
+clear
+^C
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ gedit digit-sum.cc &
+[1] 3897784
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ gedit digit-sum.cc &[K[C[C[C[C[C[C[C[Cmake -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+g++ main.o digit-sum.o -o main
+g++ test-main.o digit-sum.o -o test-main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main test-main digit-sum.o; do echo $t >>.gitignore; done
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ gedit test0[K-main.cc &
+[2] 3898191
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ 
+(gedit:3897784): Gtk-[1;33mWARNING[0m **: [34m13:55:19.103[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+gedit test-main.cc &[C[C[C[C[C[C[C[C[1Pmake -f ../Makefile[C[C[C[C[C[C[C[Cgedit test-main.cc &[C[C[C[C[C[C[C[C[1Pmake -f ../Makefile[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ -I /home/mmuffol1/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+^[[A^[[A^[[B^Cmake: *** Deleting file 'test-main.o'
+make: *** [../Makefile:62: test-main.o] Interrupt
+
+[2]+  Done                    gedit test-main.cc
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile[C[C[C[C[C[C[C[Cgedit test-main.cc &[C[C[C[C[C[C[C[C[1Pmake -f ../Makefile[C[C[C[C[C[C[C[Cgedit digit-sum.cc &[C[C[C[C[C[C[C[C[1Pmake -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+/ ./testg++ test-main.o digit-sum.o -o test-main
+-mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./test-main.cc
+bash: ./test-main.cc: Permission denied
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ clar[K[Kear
+[H[2J[3Jmmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ clear./test-main.cc[C[C[C[C[C[C[C[Cmake -f ../Makefile test.[K=[K0[K-main[K[Kin.cc
+make: Nothing to be done for 'test-main.cc'.
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile test-main.cc[K[K[K[K[K[K[K[K[K[K[K[K[K main.cc
+make: Nothing to be done for 'main.cc'.
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile main.cc[K[K[K[K[K[K[K[K[Ke
+make: Nothing to be done for 'all'.
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./ [Ktest-main.cc
+bash: ./test-main.cc: Permission denied
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./main.cc
+bash: ./main.cc: Permission denied
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./main.cc 1 + 2[K[K[K[K[K[K 
+bash: ./main.cc: Permission denied
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./main.cc [K[K[K[K
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./main.cc [Ktest-main.cc[K[K[K
+[1;31m[0m[1;33m[0m[1;32m===============================================================================[0m
+[1;32mAll tests passed[0m (1 assertion in 1 test case)
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./test-main[5Pmain.cc [Ktest-main.cc[C[C[C[C[C[C[C[Cmake -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+^[[A^[[A^[[B^[[B^[[Bg++ test-main.o digit-sum.o -o test-main
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile[C[C[C[C[C[C[C[C[8P./test-main[C[C[C[C[C[C[C[Cmake -f ../Makefile[C[C[C[C[C[C[C[C[Kmake -f ../Makefile[C[C[C[C[C[C[C[C[8P./test-main
+[1;31m[0m[1;33m[0m[1;32m===============================================================================[0m
+[1;32mAll tests passed[0m (2 assertions in 1 test case)
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./test-main[C[C[C[C[C[C[C[Cmake -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+g++ test-main.o digit-sum.o -o test-main
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile[C[C[C[C[C[C[C[C[8P./test-main
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0;37mtest-main is a Catch v2.11.3 host application.
+Run with -? for options
+
+[0m-------------------------------------------------------------------------------
+[0mdigit sums computed
+[0m-------------------------------------------------------------------------------
+[0;37mtest-main.cc:7
+...............................................................................
+
+[0m[0;37mtest-main.cc:10: [0m[1;31mFAILED:
+[0m[0;36m  REQUIRE( digitSum("7") == 7 )
+[0mwith expansion:
+[1;33m  0 == 7
+[0m
+[1;31m===============================================================================[0m[1;33m[0m[0;32m[0m
+test cases: 1[0;37m | [0m[1;31m1 failed[0m
+assertions: 3[0;37m | [0m[0;32m2 passed[0m[0;37m | [0m[1;31m1 failed[0m
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./test-main[C[C[C[C[C[C[C[Cmake -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:8:13:[m[K [01;35m[Kwarning: [m[Kcomparison with string literal results in unspecified behavior [[01;35m[K-Waddress[m[K]
+   if(str == [01;35m[K""[m[K || str == " "){
+             [01;35m[K^~[m[K
+[01m[Kdigit-sum.cc:8:26:[m[K [01;35m[Kwarning: [m[Kcomparison with string literal results in unspecified behavior [[01;35m[K-Waddress[m[K]
+   if(str == "" || str == [01;35m[K" "[m[K){
+                          [01;35m[K^~~[m[K
+[01m[Kdigit-sum.cc:14:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kacc[m[K’ was not declared in this scope
+      if (isdigit(c)) [01;31m[Kacc[m[K += *p - '0';
+                      [01;31m[K^~~[m[K
+[01m[Kdigit-sum.cc:16:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+make: *** [../Makefile:62: digit-sum.o] Error 1
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:9:13:[m[K [01;35m[Kwarning: [m[Kcomparison with string literal results in unspecified behavior [[01;35m[K-Waddress[m[K]
+   if(str == [01;35m[K""[m[K || str == " "){
+             [01;35m[K^~[m[K
+[01m[Kdigit-sum.cc:9:26:[m[K [01;35m[Kwarning: [m[Kcomparison with string literal results in unspecified behavior [[01;35m[K-Waddress[m[K]
+   if(str == "" || str == [01;35m[K" "[m[K){
+                          [01;35m[K^~~[m[K
+[01m[Kdigit-sum.cc:17:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+g++ main.o digit-sum.o -o main
+g++ test-main.o digit-sum.o -o test-main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main test-main digit-sum.o; do echo $t >>.gitignore; done
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:19:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+g++ main.o digit-sum.o -o main
+g++ test-main.o digit-sum.o -o test-main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main test-main digit-sum.o; do echo $t >>.gitignore; done
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+g++ main.o digit-sum.o -o main
+g++ test-main.o digit-sum.o -o test-main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main test-main digit-sum.o; do echo $t >>.gitignore; done
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./ [Ktest-main
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0;37mtest-main is a Catch v2.11.3 host application.
+Run with -? for options
+
+[0m-------------------------------------------------------------------------------
+[0mdigit sums computed
+[0m-------------------------------------------------------------------------------
+[0;37mtest-main.cc:7
+...............................................................................
+
+[0m[0;37mtest-main.cc:10: [0m[1;31mFAILED:
+[0m[0;36m  REQUIRE( digitSum("7") == 7 )
+[0mwith expansion:
+[1;33m  0 == 7
+[0m
+[1;31m===============================================================================[0m[1;33m[0m[0;32m[0m
+test cases: 1[0;37m | [0m[1;31m1 failed[0m
+assertions: 3[0;37m | [0m[0;32m2 passed[0m[0;37m | [0m[1;31m1 failed[0m
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./test-main[C[C[C[C[C[C[C[Cmake -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+g++ main.o digit-sum.o -o main
+g++ test-main.o digit-sum.o -o test-main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main test-main digit-sum.o; do echo $t >>.gitignore; done
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile[C[C[C[C[C[C[C[C[8P./test-main
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0;37mtest-main is a Catch v2.11.3 host application.
+Run with -? for options
+
+[0m-------------------------------------------------------------------------------
+[0mdigit sums computed
+[0m-------------------------------------------------------------------------------
+[0;37mtest-main.cc:7
+...............................................................................
+
+[0m[0;37mtest-main.cc:7: [0m[1;31mFAILED:
+[0mdue to a fatal error condition:
+  SIGSEGV - Segmentation violation signal
+
+[1;31m===============================================================================[0m[1;33m[0m[0;32m[0m
+test cases: 1[0;37m | [0m[1;31m1 failed[0m
+assertions: 1[0;37m | [0m[1;31m1 failed[0m
+
+Segmentation fault
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./test-main[C[C[C[C[C[C[C[Cmake -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:10:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kbegin[m[K’ was not declared in this scope
+   for (char* p : [01;31m[Kstr[m[K) {
+                  [01;31m[K^~~[m[K
+[01m[Kdigit-sum.cc:10:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kend[m[K’ was not declared in this scope
+make: *** [../Makefile:62: digit-sum.o] Error 1
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile[C[C[C[C[C[C[C[C[8P./test-main[C[C[C[C[C[C[C[Cmake -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+g++ main.o digit-sum.o -o main
+g++ test-main.o digit-sum.o -o test-main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main test-main digit-sum.o; do echo $t >>.gitignore; done
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile[C[C[C[C[C[C[C[C[8P./test-main
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0;37mtest-main is a Catch v2.11.3 host application.
+Run with -? for options
+
+[0m-------------------------------------------------------------------------------
+[0mdigit sums computed
+[0m-------------------------------------------------------------------------------
+[0;37mtest-main.cc:7
+...............................................................................
+
+[0m[0;37mtest-main.cc:7: [0m[1;31mFAILED:
+[0mdue to a fatal error condition:
+  SIGSEGV - Segmentation violation signal
+
+[1;31m===============================================================================[0m[1;33m[0m[0;32m[0m
+test cases: 1[0;37m | [0m[1;31m1 failed[0m
+assertions: 1[0;37m | [0m[1;31m1 failed[0m
+
+Segmentation fault
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./test-main[C[C[C[C[C[C[C[Cmake -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:10:35:[m[K [01;31m[Kerror: [m[K‘[01m[KNULL[m[K’ was not declared in this scope
+   for (const char* p = str; *p == [01;31m[KNULL[m[K; ++p) {
+                                   [01;31m[K^~~~[m[K
+[01m[Kdigit-sum.cc:10:35:[m[K [01;36m[Knote: [m[K‘[01m[KNULL[m[K’ is defined in header ‘[01m[K<cstddef>[m[K’; did you forget to ‘[01m[K#include <cstddef>[m[K’?
+[01m[Kdigit-sum.cc:4:1:[m[K
++[32m[K#include <cstddef>[m[K
+ 
+[01m[Kdigit-sum.cc:10:35:[m[K
+   for (const char* p = str; *p == [01;36m[KNULL[m[K; ++p) {
+                                   [01;36m[K^~~~[m[K
+make: *** [../Makefile:62: digit-sum.o] Error 1
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ^C
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:11:35:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+   for (const char* p = str; *p == [01;35m[KNULL[m[K; ++p) {
+                                   [01;35m[K^~~~[m[K
+g++ main.o digit-sum.o -o main
+g++ test-main.o digit-sum.o -o test-main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main test-main digit-sum.o; do echo $t >>.gitignore; done
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile[C[C[C[C[C[C[C[C[8P./test-main
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0;37mtest-main is a Catch v2.11.3 host application.
+Run with -? for options
+
+[0m-------------------------------------------------------------------------------
+[0mdigit sums computed
+[0m-------------------------------------------------------------------------------
+[0;37mtest-main.cc:7
+...............................................................................
+
+[0m[0;37mtest-main.cc:10: [0m[1;31mFAILED:
+[0m[0;36m  REQUIRE( digitSum("7") == 7 )
+[0mwith expansion:
+[1;33m  0 == 7
+[0m
+[1;31m===============================================================================[0m[1;33m[0m[0;32m[0m
+test cases: 1[0;37m | [0m[1;31m1 failed[0m
+assertions: 3[0;37m | [0m[0;32m2 passed[0m[0;37m | [0m[1;31m1 failed[0m
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./test-main[C[C[C[C[C[C[C[Cmake -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:11:35:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+   for (const char* p = str; *p != [01;35m[KNULL[m[K; ++p) {
+                                   [01;35m[K^~~~[m[K
+g++ main.o digit-sum.o -o main
+g++ test-main.o digit-sum.o -o test-main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main test-main digit-sum.o; do echo $t >>.gitignore; done
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:11:35:[m[K [01;31m[Kerror: [m[K‘[01m[Knull[m[K’ was not declared in this scope
+   for (const char* p = str; *p != [01;31m[Knull[m[K; ++p) {
+                                   [01;31m[K^~~~[m[K
+make: *** [../Makefile:62: digit-sum.o] Error 1
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:11:35:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+   for (const char* p = str; *p != [01;35m[KNULL[m[K; ++p) {
+                                   [01;35m[K^~~~[m[K
+g++ main.o digit-sum.o -o main
+g++ test-main.o digit-sum.o -o test-main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main test-main digit-sum.o; do echo $t >>.gitignore; done
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./test-main
+[1;31m[0m[1;33m[0m[1;32m===============================================================================[0m
+[1;32mAll tests passed[0m (3 assertions in 1 test case)
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./test-main[C[C[C[C[C[C[C[Cmake -f ../Makefile
+make: Nothing to be done for 'all'.
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile[C[C[C[C[C[C[C[C[8P./test-main[C[C[C[C[C[C[C[Cmake -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:11:35:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+   for (const char* p = str; *p != [01;35m[KNULL[m[K; ++p) {
+                                   [01;35m[K^~~~[m[K
+g++ main.o digit-sum.o -o main
+g++ -I /home/mmuffol1/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+^[[A^[[A^[[A^[[B^[[B                    g++ test-main.o digit-sum.o -o test-main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main test-main digit-sum.o; do echo $t >>.gitignore; done
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+g++ test-main.o digit-sum.o -o test-main
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ cd[K[K./test.[K-main
+[1;31m[0m[1;33m[0m[1;32m===============================================================================[0m
+[1;32mAll tests passed[0m (4 assertions in 1 test case)
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./test-main[C[C[C[C[C[C[C[Cmake -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+g++ test-main.o digit-sum.o -o test-main
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile[C[C[C[C[C[C[C[C[8P./test-main
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0;37mtest-main is a Catch v2.11.3 host application.
+Run with -? for options
+
+[0m-------------------------------------------------------------------------------
+[0mdigit sums computed
+[0m-------------------------------------------------------------------------------
+[0;37mtest-main.cc:7
+...............................................................................
+
+[0m[0;37mtest-main.cc:12: [0m[1;31mFAILED:
+[0m[0;36m  REQUIRE( digitSum("7 + 2") == 7 )
+[0mwith expansion:
+[1;33m  9 == 7
+[0m
+[1;31m===============================================================================[0m[1;33m[0m[0;32m[0m
+test cases: 1[0;37m | [0m[1;31m1 failed[0m
+assertions: 5[0;37m | [0m[0;32m4 passed[0m[0;37m | [0m[1;31m1 failed[0m
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./test-main[C[C[C[C[C[C[C[Cmake -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+^[[C^[[Dg++ test-main.o digit-sum.o -o test-main
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile[C[C[C[C[C[C[C[C[8P./test-main
+[1;31m[0m[1;33m[0m[1;32m===============================================================================[0m
+[1;32mAll tests passed[0m (5 assertions in 1 test case)
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./test-main[C[C[C[C[C[C[C[Cmake -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+g++ test-main.o digit-sum.o -o test-main
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile[C[C[C[C[C[C[C[C[8P./test-main
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0;37mtest-main is a Catch v2.11.3 host application.
+Run with -? for options
+
+[0m-------------------------------------------------------------------------------
+[0mdigit sums computed
+[0m-------------------------------------------------------------------------------
+[0;37mtest-main.cc:7
+...............................................................................
+
+[0m[0;37mtest-main.cc:14: [0m[1;31mFAILED:
+[0m[0;36m  REQUIRE( digitSum("7 + x + 4") == 13 )
+[0mwith expansion:
+[1;33m  11 == 13
+[0m
+[1;31m===============================================================================[0m[1;33m[0m[0;32m[0m
+test cases: 1[0;37m | [0m[1;31m1 failed[0m
+assertions: 7[0;37m | [0m[0;32m6 passed[0m[0;37m | [0m[1;31m1 failed[0m
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./test-main[C[C[C[C[C[C[C[Cmake -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:11:35:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+   for (const char* p = str; *p != [01;35m[KNULL[m[K; ++p) {
+                                   [01;35m[K^~~~[m[K
+[01m[Kdigit-sum.cc:13:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kischar[m[K’ was not declared in this scope
+      if ([01;31m[Kischar[m[K(c)) break;
+          [01;31m[K^~~~~~[m[K
+[01m[Kdigit-sum.cc:13:10:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kchar[m[K’
+      if ([01;36m[Kischar[m[K(c)) break;
+          [01;36m[K^~~~~~[m[K
+          [32m[Kchar[m[K
+make: *** [../Makefile:62: digit-sum.o] Error 1
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile[C[C[C[C[C[C[C[C[8P./test-main
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0;37mtest-main is a Catch v2.11.3 host application.
+Run with -? for options
+
+[0m-------------------------------------------------------------------------------
+[0mdigit sums computed
+[0m-------------------------------------------------------------------------------
+[0;37mtest-main.cc:7
+...............................................................................
+
+[0m[0;37mtest-main.cc:14: [0m[1;31mFAILED:
+[0m[0;36m  REQUIRE( digitSum("7 + x + 4") == 13 )
+[0mwith expansion:
+[1;33m  11 == 13
+[0m
+[1;31m===============================================================================[0m[1;33m[0m[0;32m[0m
+test cases: 1[0;37m | [0m[1;31m1 failed[0m
+assertions: 7[0;37m | [0m[0;32m6 passed[0m[0;37m | [0m[1;31m1 failed[0m
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./test-main[C[C[C[C[C[C[C[Cmake -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:11:35:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+   for (const char* p = str; *p != [01;35m[KNULL[m[K; ++p) {
+                                   [01;35m[K^~~~[m[K
+g++ main.o digit-sum.o -o main
+g++ -I /home/mmuffol1/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+^[[A^[[A^[[B^[[B^[[B                    ^[[Ag++ test-main.o digit-sum.o -o test-main
+ cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main test-main digit-sum.o; do echo $t >>.gitignore; done
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ [Amake -f ../Makefile[C[C[C[C[C[C[C[C[8P./test-main
+[1;31m[0m[1;33m[0m[1;32m===============================================================================[0m
+[1;32mAll tests passed[0m (7 assertions in 1 test case)
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ ./test-main[C[C[C[C[C[C[C[Cmake -f ../Makefile
+g++ -I /home/mmuffol1/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:12:35:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K-Wpointer-arith[m[K]
+   for (const char* p = str; *p != [01;35m[KNULL[m[K; ++p) {
+                                   [01;35m[K^~~~[m[K
+g++ main.o digit-sum.o -o main
+g++ test-main.o digit-sum.o -o test-main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main test-main digit-sum.o; do echo $t >>.gitignore; done
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile[C[C[C[C[C[C[C[C[8P./test-main
+[1;31m[0m[1;33m[0m[1;32m===============================================================================[0m
+[1;32mAll tests passed[0m (7 assertions in 1 test case)
+
+mmuffol1@remote00:/import/linux/home1/mmuffol1/i240a/submit/lab10/exercises/2-tdd$ exit
+
+Script done on 2020-04-16 14:55:11-04:00 [COMMAND_EXIT_CODE="0"]
