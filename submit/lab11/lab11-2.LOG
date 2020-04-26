@@ -1,0 +1,489 @@
+Script started on 2020-04-25 17:51:50-04:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="74" LINES="15"]
+mmuffol1@remote03:~/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K'
+1.1
+unbalanced
+mmuffol1@remote03:~/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15Pscript -a lab11.LOG
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pcd submit/lab11[6@mkdir -p[C[C[C[C[C[C[C[C[C[C[C[C[Cgit checkout -b lab11[11Pcd ~/i240a[1P240a[4P..~/240a[1Pgit pullclone[1Pcd cs240git clone[1Ppullcd ~/240a[4P..~/240ai240agit checkout -b lab11mkdir -p submit/lab11[6Pcd[C[C[C[C[C[C[C[C[C[C[C[C[Cscript -a lab11.LOG./balanced '(' '[' '[' ']' ']' ')' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake
+g++ balanced.cc -o balanced
+[01m[Kbalanced.cc:[m[K In function ‘[01m[Kint balance(int, const char**)[m[K’:
+[01m[Kbalanced.cc:59:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote03:~/i240a/submit/lab11$ make./balanced '(' '[' '[' ']' ']' ')' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K'
+1.1
+unbalanced
+mmuffol1@remote03:~/i240a/submit/lab11$  [Kexit
+
+Script done on 2020-04-25 19:11:07-04:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2020-04-26 16:08:42-04:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="75" LINES="13"]
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ gedit ba lanced.cc
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ gedit balanced.cc &
+[1] 3340108
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ 
+(gedit:3340108): Gtk-[1;33mWARNING[0m **: [34m16:25:48.295[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+./balanced '(' '[' '[' ']' ']' ')'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[Kmake
+g++ balanced.cc -o balanced
+[01m[Kbalanced.cc:[m[K In function ‘[01m[Kint balance(int, const char**)[m[K’:
+[01m[Kbalanced.cc:60:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')'
+1
+7
+unbalanced
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')'
+1
+7
+unbalanced
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')'
+1
+7
+unbalanced
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ balanced.cc -o balanced
+[01m[Kbalanced.cc:[m[K In function ‘[01m[Kint balance(int, const char**)[m[K’:
+[01m[Kbalanced.cc:60:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make./balanced '(' '[' '[' ']' ']' ')'
+1.1
+unbalanced
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ balanced.cc -o balanced
+[01m[Kbalanced.cc:[m[K In function ‘[01m[Kint balance(int, const char**)[m[K’:
+[01m[Kbalanced.cc:62:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make./balanced '(' '[' '[' ']' ']' ')'
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')'
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ echo $?
+0
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ echo $?[K./balanced '(' '[' '[' ']' ']' ']'
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ']'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pecho $?
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+0
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make
+g++ balanced.cc -o balanced
+[01m[Kbalanced.cc:[m[K In function ‘[01m[Kint balance(int, const char**)[m[K’:
+[01m[Kbalanced.cc:62:8:[m[K [01;35m[Kwarning: [m[Kinit-statement in selection statements only available with -std=c++17 or -std=gnu++17
+     if([01;35m[Kcount[m[K == (argc/2) return 0;
+        [01;35m[K^~~~~[m[K
+[01m[Kbalanced.cc:62:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+     if(count == (argc/2)[01;31m[K [m[K[32m[Kreturn[m[K 0;
+                         [01;31m[K^[m[K[32m[K~~~~~~[m[K
+                         [32m[K;[m[K
+[01m[Kbalanced.cc:63:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K}[m[K’ token
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+[01m[Kbalanced.cc:62:35:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K}[m[K’ token
+     if[34m[K([m[Kcount == (argc/2) return 0;
+       [34m[K~[m[K                           [01;31m[K^[m[K
+                                   [32m[K)[m[K
+ [32m[K}[m[K
+ [32m[K~[m[K                                  
+[01m[Kbalanced.cc:63:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K}[m[K’ token
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+[01m[Kbalanced.cc:63:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+make: *** [Makefile:11: stack] Error 1
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ maek[K[Kke
+g++ balanced.cc -o balanced
+[01m[Kbalanced.cc:[m[K In function ‘[01m[Kint balance(int, const char**)[m[K’:
+[01m[Kbalanced.cc:63:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ']'
+unbalanced
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ echo $?
+1
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')'
+unbalanced
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pecho $?
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+1
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ mae[Kke
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')'
+unbalanced
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pclear
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pmake
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')'
+unbalanced
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make
+g++ balanced.cc -o balanced
+[01m[Kbalanced.cc:[m[K In function ‘[01m[Kint balance(int, const char**)[m[K’:
+[01m[Kbalanced.cc:40:5:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+     [01;35m[K}[m[K
+     [01;35m[K^[m[K
+[01m[Kbalanced.cc:[m[K At global scope:
+[01m[Kbalanced.cc:43:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kfor[m[K’
+     [01;31m[Kfor[m[K (int i=1; i < argc; i++) {
+     [01;31m[K^~~[m[K
+[01m[Kbalanced.cc:43:19:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ does not name a type
+     for (int i=1; [01;31m[Ki[m[K < argc; i++) {
+                   [01;31m[K^[m[K
+[01m[Kbalanced.cc:43:29:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ does not name a type
+     for (int i=1; i < argc; [01;31m[Ki[m[K++) {
+                             [01;31m[K^[m[K
+[01m[Kbalanced.cc:63:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+     [01;31m[Kreturn[m[K stack.size();
+     [01;31m[K^~~~~~[m[K
+[01m[Kbalanced.cc:64:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+make: *** [Makefile:11: stack] Error 1
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make./balanced '(' '[' '[' ']' ']' ')'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pclear
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear[1Pmake
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')'
+unbalanced
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')'
+(
+[
+[
+]
+1.1
+unbalanced
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')'
+(
+[
+[
+]
+0-2
+1.1
+unbalanced
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear./balanced '(' '[' '[' ']' ']' ')'
+(
+[
+[
+]
+0-2
+1.1
+unbalanced
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')'
+(
+[
+[
+]
+2-2
+]
+2-2
+)
+1-1
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ && ech[K[K[K[K[K[K./balanced '(' '[' '[' ']' ']' ')' && j[Kecho $?
+(
+[
+[
+]
+2-2
+]
+2-2
+)
+1-1
+0
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')' && echo $?[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./balanced '(' '[' '[' ']' ']' ']' && echo $?
+(
+[
+[
+]
+2-2
+]
+2-2
+]
+1-2
+1.1
+unbalanced
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear[1Pmakeclear./balanced '(' '[' '[' ']' ']' ']' && echo $?)[C[C[C[C[C[C[C[C[C[C[C[C[K
+2-2
+2-2
+1-1
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pclear
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pmakeclear./balanced '(' '[' '[' ']' ']' ']' && echo $?)[C[C[C[C[C[C[C[C[C[C[C[C[K && echo $?
+2-2
+2-2
+1-1
+0
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ')' && echo $?[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pclear
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pmakeclear./balanced '(' '[' '[' ']' ']' ']' && echo $?
+2-2
+2-2
+1-2
+1.1
+unbalanced
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ']' && echo $?[1P[1P[1@|[1@|
+2-2
+2-2
+1-2
+1.1
+unbalanced
+1
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ']' || echo $?[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake
+g++ balanced.cc -o balanced
+[01m[Kbalanced.cc:[m[K In function ‘[01m[Kint balance(int, const char**)[m[K’:
+[01m[Kbalanced.cc:42:23:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KStack[m[K’ to ‘[01m[KStack*[m[K’ in initialization
+     Stack* stackptr = [01;31m[Kstack[m[K;
+                       [01;31m[K^~~~~[m[K
+[01m[Kbalanced.cc:[m[K In function ‘[01m[Kint main(int, const char**)[m[K’:
+[01m[Kbalanced.cc:73:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kstackptr[m[K’ was not declared in this scope
+         std::cout << "unbalanced at argument " << *[01;31m[Kstackptr[m[K.size() << std::endl;
+                                                    [01;31m[K^~~~~~~~[m[K
+[01m[Kbalanced.cc:73:52:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KStack[m[K’
+         std::cout << "unbalanced at argument " << *[01;36m[Kstackptr[m[K.size() << std::endl;
+                                                    [01;36m[K^~~~~~~~[m[K
+                                                    [32m[KStack[m[K
+make: *** [Makefile:11: stack] Error 1
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ cl[K[Kmkae[K[K[Kake
+g++ balanced.cc -o balanced
+[01m[Kbalanced.cc:[m[K In function ‘[01m[Kint main(int, const char**)[m[K’:
+[01m[Kbalanced.cc:73:52:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K<<[m[K’ token
+         std::cout << "unbalanced at argument " <<  [01;31m[K<<[m[K std::endl;
+                                                    [01;31m[K^~[m[K
+make: *** [Makefile:11: stack] Error 1
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ cla[Kear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ']'
+1.1
+unbalanced at argument #
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ echo $?
+1
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '<' '[' '{' '}' ']' '>' ')'
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ echo $?
+0
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' ')' '[' ']'
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '<' '[' '{' '}' ']' '>'
+unbalanced at argument #
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '@' ')'
+unbalanced at argument #
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ if (result == 2){
+bash: syntax error near unexpected token `{'
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$         std::cout << "invalid input" << std::endl;
+>         return 1;
+>     }[K[K[K[K[K
+> ^C
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '@' ')'
+unbalanced at argument #
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '@' ')'[K[K[K[K[K[K[K[K[K[K[K[K[Kd
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced 
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced [K '(' '@' ')'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C        std::cout << "invalid input" << std::endl;
+        return 1;
+
+[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./balanced '(' '@' ')'[K
+[K
+[K
+[K[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '@' ')'
+unbalanced at argument #
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '@' ')'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pclear
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pmakeclear./balanced '(' '@' ')'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmka[K[Kkae[K[K[Kake
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '<' '[' '{' '}' ']' '>'
+unbalanced at argument 3
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '<' '[' '{' '}' ']' '>'
+unbalanced at argument 3
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make./balanced '(' '<' '[' '{' '}' ']' '>'
+unbalanced at argument 3
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make
+g++ balanced.cc -o balanced
+[01m[Kbalanced.cc:[m[K In function ‘[01m[Kint balance(int, const char**)[m[K’:
+[01m[Kbalanced.cc:38:19:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KStack*[m[K’ to non-scalar type ‘[01m[KStack[m[K’ requested
+     Stack stack = [01;31m[Knew Stack()[m[K;
+                   [01;31m[K^~~~~~~~~~~[m[K
+make: *** [Makefile:11: stack] Error 1
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ errorTracker ++;[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K./balanced '(' '<' '[' '{' '}' ']' '>'
+unbalanced at argument 3
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '<' '[' '{' '}' ']' '>'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make./balanced '(' '<' '[' '{' '}' ']' '>'
+unbalanced at argument 3
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '<' '[' '{' '}' ']' '>'
+unbalanced at argument 3
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '<' '[' '{' '}' ']' '>'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make./balanced '(' '<' '[' '{' '}' ']' '>'
+unbalanced at argument 1
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ']'
+unbalanced at argument 6
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '[' '[' ']' ']' ']'[C[C[C[C[C[C[C[C<' '[' '{' '}' ']' '>'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ balanced.cc -o balanced
+[01m[Kbalanced.cc:[m[K In function ‘[01m[Kint balance(int, const char**)[m[K’:
+[01m[Kbalanced.cc:43:61:[m[K [01;31m[Kerror: [m[K‘[01m[Karv[m[K’ was not declared in this scope
+                 std::cout << "invalid delimiter " << "'" << [01;31m[Karv[m[K[i][0] << std::endl;
+                                                             [01;31m[K^~~[m[K
+[01m[Kbalanced.cc:43:61:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kargv[m[K’
+                 std::cout << "invalid delimiter " << "'" << [01;36m[Karv[m[K[i][0] << std::endl;
+                                                             [01;36m[K^~~[m[K
+                                                             [32m[Kargv[m[K
+make: *** [Makefile:11: stack] Error 1
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ clear
+[H[2J[3Jmmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make[K[K[K[K./balanced '(' '[' '[' ']' ']' ']'
+invalid delimiter '[
+unbalanced at argument 1
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ mak[Kke
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ int i=1[K[K[K[K[K[K[K./balanced '(' '[' '[' ']' ']' ']'
+unbalanced at argument 6
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '<' '[' '{' '}' ']' '>'
+unbalanced at argument 9
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make./balanced '(' '<' '[' '{' '}' ']' '>'
+unbalanced at argument 7
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '<' '[' '{' '}' ']' '>'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make./balanced '(' '<' '[' '{' '}' ']' '>'
+unbalanced at argument 7
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '@' ')'
+unbalanced at argument 2
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '@' ')'<' '[' '{' '}' ']' '>'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make./balanced '(' '@' ')'
+unbalanced at argument 2
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '@' ')'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make./balanced '(' '@' ')'
+unbalanced at argument 2
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make./balanced '(' '@' ')'
+unbalanced at argument 2
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '@' ')'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make./balanced '(' '@' ')'
+Invalid Delimiter@
+unbalanced at argument 2
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '@' ')'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ balanced.cc -o balanced
+cat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make./balanced '(' '@' ')'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./balanced '(' '@' ')'
+Invalid Delimiter '@'
+unbalanced at argument 2
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ ./balanced '(' '@' ')'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ balanced.cc -o balanced
+^[[Acat </dev/null >.gitignore
+for t in balanced stack; do echo $t >>.gitignore; done
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ make./balanced '(' '@' ')'
+Invalid Delimiter '@'
+mmuffol1@remote05:/import/linux/home1/mmuffol1/i240a/submit/lab11$ exit
+
+Script done on 2020-04-26 19:02:17-04:00 [COMMAND_EXIT_CODE="0"]
